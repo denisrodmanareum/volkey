@@ -28,11 +28,16 @@ jobs:
 
       - name: Prepare Pages artifact
         run: |
-          mkdir -p _site
-          cp -R dashboard/* _site/
-          # dashboard/data/status.json 경로 유지
+          rm -rf _site
           mkdir -p _site/data
+
+          # symlink(papertrade) 등 제외하고 Pages에 필요한 정적 파일만 복사
+          cp dashboard/index.html _site/index.html
+          cp -R dashboard/data/* _site/data/ || true
+
+          # 최신 상태 파일 우선 반영
           cp -f data/status.json _site/data/status.json || true
+
           touch _site/.nojekyll
 
       - name: Setup Pages
