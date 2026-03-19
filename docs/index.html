@@ -1,0 +1,1268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VOLKY TRADER</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Rajdhani:wght@400;500;600;700&display=swap');
+
+    :root {
+      --bg:       #06090f;
+      --bg2:      #0c1220;
+      --bg3:      #111b2e;
+      --border:   #1a2d48;
+      --border2:  #243d5e;
+      --text:     #d0e4ff;
+      --muted:    #5a7a9e;
+      --green:    #00e896;
+      --red:      #ff4d6d;
+      --yellow:   #ffd166;
+      --blue:     #4db8ff;
+      --purple:   #b04dff;
+      --cyan:     #00d4ff;
+      --font-mono: 'Share Tech Mono', monospace;
+      --font-main: 'Rajdhani', sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font-main);
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* 배경 그리드 효과 */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(0,245,160,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0,245,160,.015) 1px, transparent 1px);
+      background-size: 40px 40px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .wrap { max-width: 1400px; margin: 0 auto; padding: 16px; position: relative; z-index: 1; }
+
+    /* ── 헤더 ── */
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0 16px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--green);
+      text-shadow: 0 0 20px rgba(0,245,160,.4);
+    }
+    .logo span { color: var(--muted); font-weight: 400; font-size: 13px; letter-spacing: 1px; margin-left: 10px; }
+    .header-right { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--muted); font-family: var(--font-mono); }
+    .live-dot {
+      display: inline-block; width: 8px; height: 8px;
+      border-radius: 50%; background: var(--green);
+      box-shadow: 0 0 12px var(--green);
+      animation: blink 1.4s infinite;
+    }
+    @keyframes blink { 0%,100%{opacity:1} 50%{opacity:.2} }
+
+    /* ── 탭 네비 ── */
+    .tabs {
+      display: flex; gap: 4px;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 16px;
+    }
+    .tab {
+      padding: 10px 22px; font-size: 13px; font-weight: 600;
+      letter-spacing: 1px; cursor: pointer; border: none;
+      background: none; color: var(--muted);
+      border-bottom: 2px solid transparent;
+      transition: all .2s; font-family: var(--font-main);
+      position: relative;
+    }
+    .tab:hover { color: var(--text); }
+    .tab.active { color: var(--green); border-bottom-color: var(--green); text-shadow: 0 0 12px rgba(0,232,150,.3); }
+
+    /* ── 탭 패널 ── */
+    .tab-panel { display: none; }
+    .tab-panel.active { display: block; }
+
+    /* ── KPI 카드 ── */
+    .kpi { display: grid; grid-template-columns: repeat(4,1fr); gap: 10px; margin-bottom: 14px; }
+    @media(max-width:900px){ .kpi{grid-template-columns:1fr 1fr} }
+    @media(max-width:500px){ .kpi{grid-template-columns:1fr} }
+
+    .card {
+      background: linear-gradient(135deg, var(--bg2), var(--bg3));
+      border: 1px solid var(--border);
+      border-radius: 10px; padding: 14px 16px;
+      animation: slideUp .4s ease both;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .card:hover { border-color: var(--border2); box-shadow: 0 4px 20px rgba(0,0,0,.3); }
+    .card-label { font-size: 10px; color: var(--muted); letter-spacing: 1.5px; margin-bottom: 6px; text-transform: uppercase; }
+    .card-value { font-size: 24px; font-weight: 700; font-family: var(--font-mono); }
+
+    /* ── 패널 ── */
+    .panel {
+      background: var(--bg2); border: 1px solid var(--border);
+      border-radius: 10px; padding: 16px;
+      animation: slideUp .45s ease both;
+      margin-bottom: 12px;
+    }
+    .panel-title {
+      font-size: 12px; font-weight: 600; letter-spacing: 2px;
+      color: var(--muted); margin-bottom: 14px;
+      text-transform: uppercase;
+      display: flex; align-items: center; gap: 6px;
+    }
+
+    /* ── 테이블 공통 ── */
+    .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th {
+      padding: 10px 10px; text-align: left;
+      color: var(--muted); font-size: 10px; letter-spacing: 1.2px;
+      border-bottom: 1px solid var(--border); font-weight: 600;
+      text-transform: uppercase; white-space: nowrap;
+    }
+    td { padding: 10px 10px; border-bottom: 1px solid rgba(26,45,72,.5); font-size: 12px; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba(0,232,150,.04); }
+
+    /* ── 색상 ── */
+    .ok  { color: var(--green); }
+    .bad { color: var(--red); }
+    .warn { color: var(--yellow); }
+    .info { color: var(--blue); }
+
+    /* ── 2열 레이아웃 ── */
+    .row2 { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }
+    @media(max-width:980px){ .row2{grid-template-columns:1fr} }
+
+    /* ── 스캐너 컨트롤 ── */
+    .scanner-controls {
+      display: flex; align-items: flex-end; gap: 12px;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, var(--bg2), var(--bg3));
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 14px 18px;
+    }
+    .ctrl-group { display: flex; flex-direction: column; gap: 5px; }
+    .ctrl-group label {
+      font-size: 9px; color: var(--muted); letter-spacing: 1.2px;
+      text-transform: uppercase; font-weight: 600;
+    }
+    select, input[type=number] {
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--text); padding: 8px 10px;
+      border-radius: 6px; font-size: 13px; height: 36px;
+      font-family: var(--font-mono);
+      transition: border-color .2s;
+      outline: none; width: 90px;
+    }
+    select:focus, input[type=number]:focus { border-color: var(--green); }
+    .btn {
+      padding: 0 16px; height: 36px; border-radius: 6px; border: 1px solid var(--border2);
+      background: var(--bg3); color: var(--text); cursor: pointer;
+      font-size: 12px; font-weight: 600; letter-spacing: 1px;
+      transition: all .2s; font-family: var(--font-main); white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .btn:hover { border-color: var(--green); color: var(--green); }
+    .btn.active-btn { border-color: var(--green); color: var(--green); background: rgba(0,232,150,.1); }
+    .btn-sm { padding: 0 12px; height: 36px; font-size: 11px; }
+    .scanner-controls .spacer { flex: 1; }
+    .btn-scan {
+      padding: 0 24px; height: 36px; border-radius: 6px;
+      background: linear-gradient(135deg, rgba(0,232,150,.18), rgba(0,232,150,.06));
+      border: 1px solid var(--green); color: var(--green);
+      font-weight: 700; letter-spacing: 1.5px; font-size: 13px;
+      cursor: pointer; transition: all .25s; font-family: var(--font-main);
+      display: inline-flex; align-items: center; justify-content: center;
+    }
+    .btn-scan:hover {
+      background: linear-gradient(135deg, rgba(0,232,150,.3), rgba(0,232,150,.12));
+      box-shadow: 0 0 20px rgba(0,232,150,.2);
+    }
+
+    /* ── 스캐너 배지 ── */
+    .badge {
+      display: inline-block; padding: 2px 8px;
+      border-radius: 4px; font-size: 11px; font-weight: 600;
+      letter-spacing: .5px; font-family: var(--font-mono);
+    }
+    .badge-up   { background: rgba(0,245,160,.12); color: var(--green); border: 1px solid rgba(0,245,160,.25); }
+    .badge-down { background: rgba(255,77,109,.12); color: var(--red);   border: 1px solid rgba(255,77,109,.25); }
+    .badge-warn { background: rgba(255,209,102,.12); color: var(--yellow); border: 1px solid rgba(255,209,102,.25); }
+    .badge-vol  { background: rgba(77,184,255,.12); color: var(--blue);   border: 1px solid rgba(77,184,255,.25); }
+
+    /* ── 볼륨 바 ── */
+    .vol-bar-wrap { background: var(--bg3); border-radius: 3px; height: 5px; min-width: 60px; }
+    .vol-bar { height: 5px; border-radius: 3px; background: var(--blue); transition: width .5s; }
+
+    /* ── 스파크라인 ── */
+    .spark { display: inline-block; vertical-align: middle; }
+
+    /* ── 스크롤바 ── */
+    ::-webkit-scrollbar { width: 5px; height: 5px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+    /* ── 상태 표시 ── */
+    .sync-bar {
+      font-family: var(--font-mono); font-size: 11px;
+      color: var(--muted); margin-bottom: 12px;
+      display: flex; gap: 16px; flex-wrap: wrap;
+    }
+    .sync-bar span { color: var(--text); }
+
+    /* ── 포지션 방향 ── */
+    .side-long  { color: var(--green); font-weight: 700; }
+    .side-short { color: var(--red);   font-weight: 700; }
+
+    /* ── 로그 영역 ── */
+    .log-area {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: 6px; padding: 10px; height: 140px;
+      overflow-y: auto; font-family: var(--font-mono);
+      font-size: 11px; color: var(--muted);
+    }
+    .log-entry { padding: 2px 0; }
+    .log-entry.ok  { color: var(--green); }
+    .log-entry.bad { color: var(--red); }
+    .log-entry.info{ color: var(--blue); }
+
+    /* ── 애니메이션 ── */
+    @keyframes slideUp {
+      from { opacity:0; transform:translateY(8px); }
+      to   { opacity:1; transform:translateY(0); }
+    }
+    @keyframes flash {
+      0%  { background: rgba(0,245,160,.18); }
+      100%{ background: transparent; }
+    }
+    .flash { animation: flash .8s ease; }
+
+    /* ── 빈 상태 ── */
+    .empty { text-align:center; padding:40px; color:var(--muted); font-size:13px; }
+
+    /* ── 설정 인풋 ── */
+    .cfg-input {
+      width:100%; background:var(--bg3);
+      border:1px solid var(--border2); color:var(--text);
+      padding:7px 10px; border-radius:6px; font-family:var(--font-mono);
+      font-size:13px; margin-bottom:8px;
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- 헤더 -->
+  <div class="header">
+    <div>
+      <div class="logo">VOLKY <span>TRADER v0.1</span></div>
+    </div>
+    <div class="header-right">
+      <button id="restartBtn" onclick="restartBot()" style="padding:5px 12px;border-radius:6px;border:1px solid var(--border2);background:var(--bg3);color:var(--yellow);cursor:pointer;font-size:11px;font-family:var(--font-mono);transition:all .2s" onmouseover="this.style.borderColor='var(--yellow)'" onmouseout="this.style.borderColor='var(--border2)'">↻ 봇 재시작</button>
+      <span class="live-dot"></span>
+      <span id="liveMode">연결 중...</span>
+      <span id="clockEl">--:--:--</span>
+    </div>
+  </div>
+
+  <!-- 탭 -->
+  <div class="tabs">
+    <button class="tab active" onclick="switchTab('dashboard')">📊 대시보드</button>
+    <button class="tab" onclick="switchTab('scanner')">🔥 급등스캐너</button>
+    <button class="tab" onclick="switchTab('log')">📋 매매기록</button>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       탭1: 대시보드
+  ══════════════════════════════════════ -->
+  <div id="tab-dashboard" class="tab-panel active">
+
+    <div class="sync-bar">
+      동기화: <span id="syncInfo">-</span>
+      &nbsp;|&nbsp; 포지션: <span id="syncPos">-</span>개
+      &nbsp;|&nbsp; 모드: <span id="syncMode">-</span>
+    </div>
+
+    <!-- KPI -->
+    <div class="kpi">
+      <div class="card">
+        <div class="card-label">총 손익 (수수료반영)</div>
+        <div class="card-value" id="kpiTotal">-</div>
+      </div>
+      <div class="card">
+        <div class="card-label">실현 손익</div>
+        <div class="card-value" id="kpiRealized">-</div>
+      </div>
+      <div class="card">
+        <div class="card-label">미실현 손익</div>
+        <div class="card-value" id="kpiUnreal">-</div>
+      </div>
+      <div class="card">
+        <div class="card-label">오픈 포지션</div>
+        <div class="card-value" id="kpiOpen">-</div>
+      </div>
+    </div>
+
+    <!-- 포지션 + 설정 -->
+    <div class="row2">
+      <div class="panel">
+        <div class="panel-title">포지션 현황</div>
+        <div class="tbl-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>심볼</th><th>방향</th><th>수량</th>
+                <th>진입가</th><th>현재가</th><th>미실현손익</th><th>주문ID</th>
+              </tr>
+            </thead>
+            <tbody id="posBody">
+              <tr><td colspan="7" class="empty">포지션 없음</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-title">설정</div>
+        <div class="card-label" style="margin-bottom:6px">마진모드</div>
+        <input class="cfg-input" id="marginMode" readonly />
+        <div class="card-label" style="margin-bottom:6px">레버리지</div>
+        <input class="cfg-input" id="leverage" readonly />
+        <div class="card-label" style="margin-bottom:6px">최대 포지션</div>
+        <input class="cfg-input" id="maxPos" readonly />
+        <div class="card-label" style="margin-bottom:6px">종목당 진입금 (USDT)</div>
+        <input class="cfg-input" id="notional" readonly />
+      </div>
+    </div>
+
+    <!-- AI 모델 + LLM 상태 -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px">
+      <!-- AI Foundation Models -->
+      <div class="panel">
+        <div class="panel-title">🧠 AI Foundation Models (3-Layer)</div>
+        <div id="aiModelCards" style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--blue)">MOIRAI-2</span>
+              <span id="aiMoiraiStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div style="font-size:10px;color:var(--muted)">Layer 1 — 멀티코인 스캐너</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px">117M params, MoE</div>
+          </div>
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--green)">Chronos-2</span>
+              <span id="aiChronosStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div style="font-size:10px;color:var(--muted)">Layer 2 — 시그널 (close)</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px">amazon/chronos-2</div>
+          </div>
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--green)">PatchTST</span>
+              <span id="aiPatchTSTStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div style="font-size:10px;color:var(--muted)">Layer 2 — 시그널 (OHLCV)</div>
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:4px">
+              <span style="font-size:10px;color:var(--muted)">로컬 학습 필요</span>
+              <button id="trainPatchTSTBtn" onclick="startPatchTSTTraining()" style="font-size:9px;padding:3px 10px;border-radius:4px;border:1px solid var(--green);background:rgba(0,232,150,.08);color:var(--green);cursor:pointer;font-family:var(--font-main);font-weight:600;letter-spacing:.5px">학습</button>
+            </div>
+          </div>
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--purple)">Lag-Llama</span>
+              <span id="aiLagLlamaStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div style="font-size:10px;color:var(--muted)">Layer 3 — 리스크 게이트</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px">Kelly criterion</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LLM Scheduler Status -->
+      <div class="panel">
+        <div class="panel-title">🤖 LLM 자기진화 시스템</div>
+        <div style="display:grid;gap:8px">
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--yellow)">Ollama LLM</span>
+              <span id="llmOllamaStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div style="font-size:10px;color:var(--muted)">전략 생성: qwen3.5:35b</div>
+            <div style="font-size:10px;color:var(--muted);margin-top:2px">시그널 판단: qwen3.5:9b</div>
+          </div>
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--cyan)">스케줄러</span>
+              <span id="schedulerStatus" class="badge" style="font-size:9px">-</span>
+            </div>
+            <div id="schedulerInfo" style="font-size:10px;color:var(--muted)">-</div>
+          </div>
+          <div class="card" style="padding:10px">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+              <span style="font-size:11px;font-weight:700;color:var(--text)">전략 버전</span>
+            </div>
+            <div id="strategyVersion" style="font-size:10px;color:var(--muted)">-</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       탭2: 급등스캐너
+  ══════════════════════════════════════ -->
+  <div id="tab-scanner" class="tab-panel">
+
+    <!-- 컨트롤 -->
+    <div class="scanner-controls">
+      <div class="ctrl-group">
+        <label>타임프레임</label>
+        <select id="scanTf" style="width:90px">
+          <option value="1m">1분</option>
+          <option value="3m">3분</option>
+          <option value="5m" selected>5분</option>
+          <option value="15m">15분</option>
+        </select>
+      </div>
+      <div class="ctrl-group">
+        <label>최소 변화율</label>
+        <input type="number" id="scanMinPct" value="1.5" step="0.1" min="0.1" style="width:80px" />
+      </div>
+      <div class="ctrl-group">
+        <label>볼륨 배수</label>
+        <input type="number" id="scanMinVol" value="1.0" step="0.1" min="0.5" style="width:80px" />
+      </div>
+      <div class="ctrl-group">
+        <label>필터</label>
+        <div style="display:flex;gap:4px">
+          <button class="btn btn-sm active-btn" id="btnAll"  onclick="setFilter('all')">전체</button>
+          <button class="btn btn-sm" id="btnLong"  onclick="setFilter('long')">롱</button>
+          <button class="btn btn-sm" id="btnShort" onclick="setFilter('short')">숏</button>
+        </div>
+      </div>
+      <div class="spacer"></div>
+      <div class="ctrl-group">
+        <label>&nbsp;</label>
+        <button class="btn-scan" id="scanBtn" onclick="toggleScan()">▶ 스캔 시작</button>
+      </div>
+    </div>
+
+    <!-- 통계 바 -->
+    <div class="sync-bar" id="scanStats">
+      스캔 대기 중...
+    </div>
+
+    <!-- 스캐너 테이블 -->
+    <div class="panel" style="padding:0">
+      <div class="tbl-wrap">
+        <table id="scanTable">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>심볼</th>
+              <th>현재가</th>
+              <th>변화율</th>
+              <th>패턴</th>
+              <th>모멘텀</th>
+              <th>펌프리스크</th>
+              <th>AI 이상치</th>
+              <th>AI 시그널</th>
+              <th>거래량배수</th>
+              <th>진입구간</th>
+              <th>상태</th>
+              <th>스파크</th>
+            </tr>
+          </thead>
+          <tbody id="scanBody">
+            <tr><td colspan="11" class="empty">스캔 버튼을 눌러 시작하세요</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 스캔 로그 -->
+    <div style="margin-top:12px">
+      <div class="panel-title" style="padding:12px 14px 0">스캔 로그</div>
+      <div class="log-area" id="scanLog">
+        <div class="log-entry">[VOLKY] 스캐너 초기화 완료. 바이낸스 선물 전 종목 스캔 준비.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════
+       탭3: 매매기록
+  ══════════════════════════════════════ -->
+  <div id="tab-log" class="tab-panel">
+    <!-- 누적 수익 차트 -->
+    <div class="panel" style="margin-bottom:12px">
+      <div class="panel-title">📈 누적 수익 (일자별)</div>
+      <div id="equityCurve" style="height:180px;position:relative;overflow:hidden"></div>
+    </div>
+    <!-- 일자별 요약 -->
+    <div class="panel" style="margin-bottom:12px">
+      <div class="panel-title">📅 일자별 매매 요약</div>
+      <table>
+        <thead><tr>
+          <th>날짜</th><th>거래수</th><th>승률</th><th>일일 수익</th><th>누적 수익</th><th>승</th><th>패</th><th>최대승</th><th>최대패</th>
+        </tr></thead>
+        <tbody id="dailySummaryBody"></tbody>
+      </table>
+    </div>
+    <!-- 개별 거래 -->
+    <div class="panel">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+        <div class="panel-title" style="margin:0">📋 개별 매매 기록</div>
+        <select id="tradeDateFilter" onchange="renderTradeLog()" style="background:var(--bg2);color:var(--text);border:1px solid var(--border);padding:4px 8px;border-radius:6px;font-size:12px">
+          <option value="all">전체</option>
+        </select>
+      </div>
+      <table>
+        <thead><tr>
+          <th>#</th><th>시간</th><th>심볼</th><th>방향</th><th>사유</th><th>수익률</th><th>수익($)</th>
+        </tr></thead>
+        <tbody id="tradeLogBody"></tbody>
+      </table>
+      <div id="tradeLogEmpty" style="text-align:center;color:var(--muted);padding:24px;display:none">거래 기록이 없습니다</div>
+    </div>
+  </div>
+
+</div><!-- /wrap -->
+
+<script>
+// ══════════════════════════════════════════════════════
+//  유틸
+// ══════════════════════════════════════════════════════
+const $ = id => document.getElementById(id);
+const fmt  = v => (v >= 0 ? '+' : '') + Number(v).toFixed(2) + '$';
+const fmtP = v => (v >= 0 ? '+' : '') + Number(v).toFixed(2) + '%';
+const cls  = v => v >= 0 ? 'ok' : 'bad';
+
+function switchTab(name) {
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  $('tab-' + name).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// 시계
+setInterval(() => {
+  $('clockEl').textContent = new Date().toLocaleTimeString('ko-KR');
+}, 1000);
+
+// ══════════════════════════════════════════════════════
+//  대시보드 (status.json 폴링)
+// ══════════════════════════════════════════════════════
+function renderDash(d) {
+  $('kpiTotal').innerHTML    = `<span class="${cls(d.pnl.total)}">${fmt(d.pnl.total)}</span>`;
+  $('kpiRealized').innerHTML = `<span class="${cls(d.pnl.realized_net)}">${fmt(d.pnl.realized_net)}</span>`;
+  $('kpiUnreal').innerHTML   = `<span class="${cls(d.pnl.unrealized)}">${fmt(d.pnl.unrealized)}</span>`;
+  $('kpiOpen').textContent   = d.positions.length + '개';
+  $('syncInfo').textContent  = d.updated_at || '-';
+  $('syncPos').textContent   = d.positions.length;
+  $('syncMode').textContent  = d.config.margin_mode + ' ' + d.config.leverage + 'x';
+  $('marginMode').value = d.config.margin_mode;
+  $('leverage').value   = d.config.leverage + 'x';
+  $('maxPos').value     = d.config.max_positions;
+  $('notional').value   = d.config.order_notional_usdt + ' USDT';
+  const body = $('posBody');
+  body.innerHTML = '';
+  if (!d.positions.length) {
+    body.innerHTML = '<tr><td colspan="7" class="empty">오픈 포지션 없음</td></tr>';
+    return;
+  }
+  d.positions.forEach(p => {
+    const tr = document.createElement('tr');
+    const pc = p.unrealized_pnl >= 0 ? 'ok' : 'bad';
+    const sc = p.side === 'LONG' ? 'side-long' : 'side-short';
+    tr.innerHTML = `
+      <td><strong>${p.symbol}</strong></td>
+      <td class="${sc}">${p.side}</td>
+      <td style="font-family:var(--font-mono)">${p.qty}</td>
+      <td style="font-family:var(--font-mono)">${Number(p.entry).toLocaleString()}</td>
+      <td style="font-family:var(--font-mono)">${Number(p.mark).toLocaleString()}</td>
+      <td class="${pc}" style="font-family:var(--font-mono)">${fmt(p.unrealized_pnl)}</td>
+      <td style="color:var(--muted)">${p.order_id || '-'}</td>
+    `;
+    body.appendChild(tr);
+  });
+}
+
+async function loadDash() {
+  try {
+    const res = await fetch('./data/status.json?_=' + Date.now());
+    const d = await res.json();
+    renderDash(d);
+    $('liveMode').textContent = 'HTTP 폴링 ✓';
+  } catch(e) {
+    $('liveMode').textContent = '데이터 없음';
+  }
+}
+
+// surge_status.json 폴링 (엔진 실행 시 자동 반영)
+async function loadSurgeStatus() {
+  try {
+    const res = await fetch('./data/surge_status.json?_=' + Date.now());
+    if (!res.ok) return;
+    const d = await res.json();
+    if (d.candidates && d.candidates.length > 0) {
+      // MOIRAI 출력 → 대시보드 포맷 변환
+      const mapped = d.candidates.map(c => {
+        const retPct = (c.predicted_return || 0) * 100;
+        const bullish = retPct > 0;
+        return {
+          symbol:         c.symbol,
+          price:          c.q50 || 0,
+          detected_price: c.q50 || 0,
+          pct:            retPct,
+          pct_change:     retPct,
+          volMult:        1,
+          vol_mult:       1,
+          vol24h:         0,
+          klines:         [],
+          bullish,
+          pattern:        c.anomaly_score >= 0.4 ? '급등전조' : c.anomaly_score >= 0.25 ? '이상감지' : '미분류',
+          momentum_score: Math.round((c.anomaly_score || 0) * 100),
+          pump_risk:      0,
+          entry_zone:     [c.q10 || 0, c.q90 || 0],
+          status:         c.anomaly_score >= 0.3 ? '진입가능' : '감시중',
+          reject_reason:  '',
+          moirai_anomaly_score: c.anomaly_score || 0,
+          ai_confidence:  c.anomaly_score || 0,
+          ai_direction:   bullish ? 'LONG' : 'SHORT',
+          _volOk:         true,
+        };
+      });
+      mapped.sort((a, b) => b.moirai_anomaly_score - a.moirai_anomaly_score);
+      scanResults = mapped;
+      renderScanTable(scanResults);
+      const scanTime = d.last_scan ? new Date(d.last_scan).toLocaleTimeString('ko-KR') : '?';
+      const upCount   = mapped.filter(c => c.pct > 0).length;
+      const downCount = mapped.filter(c => c.pct < 0).length;
+      $('scanStats').innerHTML = `
+        엔진 업데이트: <span>${scanTime}</span>
+        &nbsp;|&nbsp; 후보: <span>${mapped.length}</span>개
+        &nbsp;|&nbsp; 급등: <span style="color:var(--green)">${upCount}</span>
+        &nbsp;|&nbsp; 급락: <span style="color:var(--red)">${downCount}</span>
+        &nbsp;|&nbsp; 스캔: <span style="color:var(--blue)">${d.total_scanned || 0}개 코인</span>
+        &nbsp;|&nbsp; <span style="color:var(--blue)">MOIRAI-2 연동</span>
+      `;
+    }
+  } catch(_) {}
+}
+
+loadDash();
+loadSurgeStatus();  // 페이지 로드 시 즉시 MOIRAI 데이터 표시
+setInterval(loadDash, 5000);
+setInterval(() => { if (!scanRunning) loadSurgeStatus(); }, 10000);  // 스캔 중이 아닐 때만 MOIRAI 폴링
+
+// WebSocket 시도
+(function() {
+  const wsUrl = new URLSearchParams(location.search).get('ws') || 'ws://127.0.0.1:8765';
+  try {
+    const ws = new WebSocket(wsUrl);
+    ws.onopen    = () => { $('liveMode').textContent = 'WebSocket 실시간 ✓'; };
+    ws.onmessage = ev => { try { renderDash(JSON.parse(ev.data)); } catch(_){} };
+    ws.onerror   = () => { $('liveMode').textContent = 'HTTP 폴링 ✓'; };
+    ws.onclose   = () => { $('liveMode').textContent = 'HTTP 폴링 ✓'; };
+  } catch(_) {}
+})();
+
+// ══════════════════════════════════════════════════════
+//  급등 스캐너
+// ══════════════════════════════════════════════════════
+let scanRunning  = false;
+let scanInterval = null;
+let scanFilter   = 'all';
+let scanResults  = [];
+
+function setFilter(f) {
+  scanFilter = f;
+  ['All','Long','Short'].forEach(x => {
+    $('btn'+x).classList.toggle('active-btn', x.toLowerCase() === f);
+  });
+  renderScanTable(scanResults);
+}
+
+function toggleScan() {
+  if (scanRunning) {
+    stopScan();
+  } else {
+    startScan();
+  }
+}
+
+function startScan() {
+  scanRunning = true;
+  $('scanBtn').textContent = '⏹ 스캔 중지';
+  $('scanBtn').classList.add('active-btn');
+  addLog('info', '스캔 시작...');
+  doScan();
+  const tf = $('scanTf').value;
+  const intervalMs = tf === '1m' ? 15000 : tf === '3m' ? 20000 : tf === '5m' ? 30000 : 60000;
+  scanInterval = setInterval(doScan, intervalMs);
+}
+
+function stopScan() {
+  scanRunning = false;
+  clearInterval(scanInterval);
+  $('scanBtn').textContent = '▶ 스캔 시작';
+  $('scanBtn').classList.remove('active-btn');
+  addLog('', '스캔 중지됨.');
+}
+
+// 바이낸스 선물 전체 티커 fetch
+async function fetchAllTickers() {
+  const url = 'https://fapi.binance.com/fapi/v1/ticker/24hr';
+  const res  = await fetch(url);
+  return res.json();
+}
+
+// 최근 캔들 fetch (스파크라인 + 거래량 배수 계산)
+async function fetchKlines(symbol, tf, limit = 20) {
+  const url = `https://fapi.binance.com/fapi/v1/klines?symbol=${symbol}&interval=${tf}&limit=${limit}`;
+  const res = await fetch(url);
+  return res.json();
+}
+
+// 거래량 배수 계산 (최신 거래량 / 이전 N개 평균)
+function calcVolMultiplier(klines) {
+  if (!klines || klines.length < 5) return 1;
+  const vols = klines.map(k => parseFloat(k[5]));
+  const latest = vols[vols.length - 1];
+  const avg    = vols.slice(0, -1).reduce((a,b) => a+b, 0) / (vols.length - 1);
+  return avg > 0 ? latest / avg : 1;
+}
+
+// 스파크라인 SVG
+function sparklineSVG(klines, bullish) {
+  if (!klines || klines.length < 3) return '-';
+  const closes = klines.slice(-12).map(k => parseFloat(k[4]));
+  const min = Math.min(...closes);
+  const max = Math.max(...closes);
+  const range = max - min || 1;
+  const w = 70, h = 24;
+  const pts = closes.map((v, i) => {
+    const x = (i / (closes.length - 1)) * w;
+    const y = h - ((v - min) / range) * h;
+    return `${x},${y}`;
+  }).join(' ');
+  const color = bullish ? '#00f5a0' : '#ff4d6d';
+  return `<svg class="spark" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}">
+    <polyline points="${pts}" fill="none" stroke="${color}" stroke-width="1.5" opacity="0.85"/>
+  </svg>`;
+}
+
+// 신호 판정 (간단 룰)
+function judgeSignal(pct, volMult, klines) {
+  const signals = [];
+  if (pct > 3 && volMult > 3)    signals.push({text:'폭등', cls:'badge-up'});
+  else if (pct > 1.5 && volMult > 2) signals.push({text:'급등', cls:'badge-up'});
+  if (pct < -3 && volMult > 3)   signals.push({text:'폭락', cls:'badge-down'});
+  else if (pct < -1.5 && volMult > 2) signals.push({text:'급락', cls:'badge-down'});
+  if (volMult > 5)               signals.push({text:'거래량폭발', cls:'badge-vol'});
+  if (signals.length === 0)      signals.push({text:'모니터링', cls:'badge-warn'});
+  return signals;
+}
+
+async function doScan() {
+  addLog('info', `[${new Date().toLocaleTimeString()}] 전체 티커 조회 중...`);
+  let tickers;
+  try {
+    tickers = await fetchAllTickers();
+  } catch(e) {
+    addLog('bad', '바이낸스 API 오류: ' + e.message);
+    return;
+  }
+
+  const tf      = $('scanTf').value;
+  const minPct  = parseFloat($('scanMinPct').value);
+  const minVol  = parseFloat($('scanMinVol').value);
+
+  // USDT 선물만 필터
+  const usdtTickers = tickers.filter(t =>
+    t.symbol.endsWith('USDT') &&
+    !t.symbol.includes('_') &&
+    Math.abs(parseFloat(t.priceChangePercent)) >= minPct
+  );
+
+  addLog('', `후보 ${usdtTickers.length}개 발견 → 상위 종목 캔들 조회 중...`);
+
+  // 변화율 절대값 기준 상위 25개 캔들 조회 (rate limit 방지)
+  const top = usdtTickers
+    .sort((a,b) => Math.abs(parseFloat(b.priceChangePercent)) - Math.abs(parseFloat(a.priceChangePercent)))
+    .slice(0, 25);
+
+  // 5개씩 배치 조회 (rate limit 방지)
+  const results = [];
+  for (let i = 0; i < top.length; i += 5) {
+    const batch = top.slice(i, i + 5);
+    const batchResults = await Promise.allSettled(
+      batch.map(async t => {
+        try {
+          const klines = await fetchKlines(t.symbol, tf, 20);
+          const pct    = parseFloat(t.priceChangePercent);
+          const volM   = calcVolMultiplier(klines);
+          return {
+            symbol:    t.symbol,
+            price:     parseFloat(t.lastPrice),
+            pct,
+            volMult:   volM,
+            vol24h:    parseFloat(t.quoteVolume),
+            high:      parseFloat(t.highPrice),
+            low:       parseFloat(t.lowPrice),
+            klines,
+            bullish:   pct > 0,
+          };
+        } catch(e) {
+          return { symbol: t.symbol, price: parseFloat(t.lastPrice), pct: parseFloat(t.priceChangePercent), volMult: 1, vol24h: 0, klines: [], bullish: parseFloat(t.priceChangePercent) > 0 };
+        }
+      })
+    );
+    results.push(...batchResults);
+    if (i + 5 < top.length) await new Promise(r => setTimeout(r, 200)); // 200ms 딜레이
+  }
+
+  let raw = results
+    .filter(r => r.status === 'fulfilled')
+    .map(r => r.value);
+  // volMult 필터는 소프트: 미달이면 '감시중', 충족이면 '진입가능'
+  raw.forEach(r => {
+    r._volOk = r.volMult >= minVol;
+  });
+
+  // surge_scalper.py 엔진 포맷과 호환되도록 필드 매핑
+  raw = raw.map(r => ({
+    ...r,
+    pct_change:     r.pct,
+    vol_mult:       r.volMult,
+    pattern:        r.pattern || '미분류',
+    momentum_score: r.momentumScore || 0,
+    pump_risk:      r.pumpRisk || 0,
+    entry_zone:     r.entryZone || [0, 0],
+    status:         r._volOk ? '진입가능' : '감시중',
+    reject_reason:  r.rejectReason || '',
+    detected_price: r.price,
+    moirai_anomaly_score: r.moirai_anomaly_score || 0,
+    ai_confidence:  r.ai_confidence || 0,
+    ai_direction:   r.ai_direction || '',
+  }));
+  raw.sort((a,b) => Math.abs(b.pct_change) - Math.abs(a.pct_change));
+  scanResults = raw;
+
+  // 통계
+  const upCount   = raw.filter(r => r.pct > 0).length;
+  const downCount = raw.filter(r => r.pct < 0).length;
+  $('scanStats').innerHTML = `
+    스캔 완료: <span>${new Date().toLocaleTimeString()}</span>
+    &nbsp;|&nbsp; 총 후보: <span>${tickers.length}</span>개
+    &nbsp;|&nbsp; 급등: <span style="color:var(--green)">${upCount}</span>
+    &nbsp;|&nbsp; 급락: <span style="color:var(--red)">${downCount}</span>
+    &nbsp;|&nbsp; 타임프레임: <span>${tf}</span>
+  `;
+  addLog('ok', `스캔 완료 — 급등 ${upCount}개 / 급락 ${downCount}개 감지`);
+  renderScanTable(raw);
+}
+
+// ── 패턴 배지 ──────────────────────────────────────
+const PATTERN_BADGE = {
+  '축적형': {cls:'badge-up',   icon:'🟢'},
+  '연속형': {cls:'badge-up',   icon:'🔵'},
+  '뉴스형': {cls:'badge-warn', icon:'🟡'},
+  '펌프형': {cls:'badge-down', icon:'🔴'},
+  '미분류': {cls:'badge-vol',  icon:'⚪'},
+};
+const STATUS_BADGE = {
+  '눌림대기': {cls:'badge-up',   label:'눌림대기'},
+  '진입가능': {cls:'badge-up',   label:'진입가능'},
+  '감시중':   {cls:'badge-vol',  label:'감시중'},
+  '진입거부': {cls:'badge-down', label:'거부'},
+  '진입완료': {cls:'badge-warn', label:'진입완료'},
+};
+
+function scoreBar(val, max, color) {
+  const w = Math.min(100, (val / max) * 100);
+  return `<div style="display:flex;align-items:center;gap:6px">
+    <span style="font-family:var(--font-mono);font-size:12px;width:28px">${val}</span>
+    <div class="vol-bar-wrap" style="min-width:48px"><div class="vol-bar" style="width:${w}%;background:${color}"></div></div>
+  </div>`;
+}
+
+function renderScanTable(data) {
+  const body = $('scanBody');
+  let filtered = data;
+  if (scanFilter === 'long')  filtered = data.filter(r => r.pct > 0);
+  if (scanFilter === 'short') filtered = data.filter(r => r.pct < 0);
+
+  if (!filtered.length) {
+    body.innerHTML = '<tr><td colspan="11" class="empty">조건에 맞는 종목 없음</td></tr>';
+    return;
+  }
+
+  body.innerHTML = '';
+  filtered.forEach((r, i) => {
+    const pb = PATTERN_BADGE[r.pattern] || PATTERN_BADGE['미분류'];
+    const sb = STATUS_BADGE[r.status]   || {cls:'badge-vol', label: r.status};
+    const volBarW = Math.min(100, (r.volMult / 10) * 100);
+
+    // 진입구간
+    let entryZoneHTML = '<span style="color:var(--muted)">-</span>';
+    if (r.entry_zone && r.entry_zone[0] > 0) {
+      entryZoneHTML = `<span style="font-family:var(--font-mono);font-size:11px;color:var(--blue)">
+        ${r.entry_zone[0].toLocaleString(undefined,{maximumFractionDigits:4})}<br>
+        <span style="color:var(--muted)">~${r.entry_zone[1].toLocaleString(undefined,{maximumFractionDigits:4})}</span>
+      </span>`;
+    }
+
+    // 거부사유 툴팁
+    const rejectTip = r.reject_reason ? `title="${r.reject_reason}"` : '';
+
+    const tr = document.createElement('tr');
+    if (r.status === '진입거부') tr.style.opacity = '0.45';
+    tr.className = 'flash';
+    tr.innerHTML = `
+      <td style="color:var(--muted);font-family:var(--font-mono)">${i+1}</td>
+      <td><strong style="font-family:var(--font-mono)">${r.symbol.replace('USDT','')}<span style="color:var(--muted);font-size:11px">/USDT</span></strong></td>
+      <td style="font-family:var(--font-mono)">${Number(r.price||r.detected_price||0).toLocaleString(undefined,{maximumFractionDigits:4})}</td>
+      <td class="${r.pct_change>=0?'ok':'bad'}" style="font-family:var(--font-mono);font-weight:700">${fmtP(r.pct_change)}</td>
+      <td><span class="badge ${pb.cls}">${pb.icon} ${r.pattern}</span></td>
+      <td>${scoreBar(r.momentum_score, 100, 'var(--green)')}</td>
+      <td>${scoreBar(r.pump_risk, 100, 'var(--red)')}</td>
+      <td>${r.moirai_anomaly_score > 0 ? scoreBar(Math.round(r.moirai_anomaly_score*100), 100, 'var(--blue)') : '<span style="color:var(--muted)">-</span>'}</td>
+      <td style="font-family:var(--font-mono);font-size:11px;color:${r.ai_confidence>0.5?'var(--green)':r.ai_confidence>0?'var(--muted)':'var(--muted)'}">${r.ai_confidence>0?(r.ai_direction+' '+Math.round(r.ai_confidence*100)+'%'):'-'}</td>
+      <td>
+        <div style="display:flex;align-items:center;gap:6px">
+          <span style="font-family:var(--font-mono);color:var(--blue)">${Number(r.vol_mult).toFixed(1)}x</span>
+          <div class="vol-bar-wrap"><div class="vol-bar" style="width:${volBarW}%"></div></div>
+        </div>
+      </td>
+      <td>${entryZoneHTML}</td>
+      <td ${rejectTip}><span class="badge ${sb.cls}">${sb.label}</span></td>
+      <td>${sparklineSVG(r.klines||[], r.pct_change>0)}</td>
+    `;
+    body.appendChild(tr);
+  });
+}
+
+function addLog(type, msg) {
+  const log  = $('scanLog');
+  const div  = document.createElement('div');
+  div.className = 'log-entry ' + type;
+  div.textContent = msg;
+  log.appendChild(div);
+  log.scrollTop = log.scrollHeight;
+  // 최대 100줄
+  while (log.children.length > 100) log.removeChild(log.firstChild);
+}
+
+// ══════════════════════════════════════════════════════
+//  AI 모델 + LLM 상태 체크
+// ══════════════════════════════════════════════════════
+function setStatusBadge(id, ok, label) {
+  const el = $(id);
+  if (!el) return;
+  el.textContent = label || (ok ? '활성' : '비활성');
+  el.className = 'badge ' + (ok ? 'badge-up' : 'badge-down');
+}
+
+const DASH_API = 'http://127.0.0.1:8770';
+
+async function restartBot() {
+  if (!confirm('볼키봇을 재시작할까요?')) return;
+  const btn = $('restartBtn');
+  btn.textContent = '재시작 중...';
+  btn.style.color = 'var(--yellow)';
+  try {
+    const res = await fetch(DASH_API + '/restart', { method: 'POST' });
+    const data = await res.json();
+    btn.textContent = '완료';
+    btn.style.color = 'var(--green)';
+    setTimeout(() => { btn.textContent = '↻ 봇 재시작'; btn.style.color = 'var(--yellow)'; checkAIStatus(); }, 5000);
+  } catch {
+    btn.textContent = 'API 없음';
+    btn.style.color = 'var(--red)';
+    setTimeout(() => { btn.textContent = '↻ 봇 재시작'; btn.style.color = 'var(--yellow)'; }, 3000);
+    alert('dash_api가 실행되지 않았습니다.\n\n터미널에서:\ncd ~/Desktop/2026/volky-bot\npython engine/dash_api.py &');
+  }
+}
+
+function startPatchTSTTraining() {
+  if (!confirm('PatchTST 학습을 시작할까요?')) return;
+  const btn = $('trainPatchTSTBtn');
+  btn.textContent = '시작중...';
+  fetch(DASH_API + '/train', { method: 'POST' })
+    .then(r => r.json())
+    .then(d => {
+      btn.textContent = '학습중';
+      btn.style.color = 'var(--yellow)';
+      setTimeout(() => { btn.textContent = '학습'; btn.style.color = 'var(--green)'; }, 60000);
+    })
+    .catch(() => {
+      btn.textContent = '학습';
+      alert('dash_api가 실행되지 않았습니다.\n\n터미널에서:\ncd ~/Desktop/2026/volky-bot\npython engine/dash_api.py &');
+    });
+}
+
+async function checkAIStatus() {
+  // dash_api에서 상태 읽기
+  try {
+    const res = await fetch(DASH_API + '/status');
+    const data = await res.json();
+    const ai = data.ai_models || {};
+    setStatusBadge('aiMoiraiStatus', ai.moirai, ai.moirai ? '활성' : '비활성');
+    setStatusBadge('aiChronosStatus', ai.chronos, ai.chronos ? '활성' : '비활성');
+    setStatusBadge('aiPatchTSTStatus', ai.patchtst, ai.patchtst ? '활성' : '미학습');
+    setStatusBadge('aiLagLlamaStatus', ai.lag_llama, ai.lag_llama ? '활성' : '비활성');
+    // 봇 실행 상태
+    $('liveMode').textContent = data.bot_running ? '봇 실행중 ✓' : '봇 정지';
+  } catch {
+    // dash_api 안 돌면 로그 파일 직접 파싱 (fallback)
+    try {
+      const res = await fetch('../papertrade/scalp_live_session.log?_=' + Date.now(), { headers: { Range: 'bytes=-30000' } });
+      const text = await res.text();
+      const aiLine = text.split('\n').reverse().find(l => l.includes('AI_MODELS_LOADED'));
+      if (aiLine) {
+        const m = aiLine.match(/\{.*\}/);
+        if (m) {
+          const s = JSON.parse(m[0].replace(/'/g, '"').replace(/True/g, 'true').replace(/False/g, 'false'));
+          setStatusBadge('aiMoiraiStatus', s.moirai, s.moirai ? '활성' : '비활성');
+          setStatusBadge('aiChronosStatus', s.chronos, s.chronos ? '활성' : '비활성');
+          setStatusBadge('aiPatchTSTStatus', s.patchtst, s.patchtst ? '활성' : '미학습');
+          setStatusBadge('aiLagLlamaStatus', s.lag_llama, s.lag_llama ? '활성' : '비활성');
+        }
+      }
+    } catch {}
+  }
+
+  // Ollama
+  try {
+    const res = await fetch('http://localhost:11434/api/tags');
+    const data = await res.json();
+    const has35b = (data.models || []).some(m => m.name.includes('35b'));
+    setStatusBadge('llmOllamaStatus', has35b, has35b ? '35b 활성' : '모델없음');
+  } catch {
+    setStatusBadge('llmOllamaStatus', false, '미연결');
+  }
+
+  // 스케줄러 로그 체크
+  try {
+    const res = await fetch('../data/scheduler.log?_=' + Date.now());
+    const text = await res.text();
+    const lines = text.trim().split('\n');
+    const last = lines[lines.length - 1] || '';
+    const isRunning = last.includes('executed successfully') || last.includes('Running job');
+    setStatusBadge('schedulerStatus', isRunning, isRunning ? '실행중' : '중지');
+    const timeMatch = last.match(/\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}/);
+    if ($('schedulerInfo')) $('schedulerInfo').textContent = timeMatch
+      ? `마지막: ${timeMatch[0]} | 5분 긴급체크 · 03:00 전략진화`
+      : '매일 03:00 전략 진화 | 5분 긴급 체크';
+  } catch {
+    setStatusBadge('schedulerStatus', false, '로그없음');
+  }
+
+  // 전략 버전
+  try {
+    const res = await fetch('../data/scalp_strategy_state.json?_=' + Date.now());
+    const data = await res.json();
+    if ($('strategyVersion')) $('strategyVersion').innerHTML =
+      `<strong>${data.active_name || '-'}</strong> v${data.active_version || '-'}<br/>` +
+      `<span style="color:var(--muted)">후보: ${data.candidate_version || '없음'} · ${data.candidate_status || 'idle'}</span>`;
+  } catch {}
+}
+
+checkAIStatus();
+setInterval(checkAIStatus, 30000);
+
+// ══════════════════════════════════════════════════════
+//  매매기록 탭 — JSONL 로드 + 일자별 분석
+// ══════════════════════════════════════════════════════
+let allTrades = [];
+const NOTIONAL = 40 * 3; // notional × leverage = actual position size
+
+async function loadTradeLog() {
+  try {
+    const res = await fetch('../papertrade/scalp_live_trades.jsonl?_=' + Date.now());
+    const text = await res.text();
+    allTrades = text.trim().split('\n').filter(Boolean).map(l => {
+      try { return JSON.parse(l); } catch { return null; }
+    }).filter(Boolean);
+
+    buildDailySummary();
+    buildDateFilter();
+    renderTradeLog();
+  } catch (e) {
+    $('tradeLogEmpty').style.display = 'block';
+    $('tradeLogEmpty').textContent = '거래 데이터 로드 실패: ' + e.message;
+  }
+}
+
+function buildDailySummary() {
+  const exits = allTrades.filter(t => t.type === 'EXIT' && t.ret !== undefined);
+  const byDate = {};
+
+  exits.forEach(t => {
+    const d = t.ts.slice(0, 10); // YYYY-MM-DD
+    if (!byDate[d]) byDate[d] = [];
+    byDate[d].push(t);
+  });
+
+  const dates = Object.keys(byDate).sort();
+  let cumPnl = 0;
+  const rows = [];
+
+  dates.forEach(d => {
+    const trades = byDate[d];
+    const wins = trades.filter(t => t.ret > 0);
+    const losses = trades.filter(t => t.ret <= 0);
+    const dayPnl = trades.reduce((s, t) => s + (t.ret || 0) * NOTIONAL, 0);
+    cumPnl += dayPnl;
+    const wr = trades.length > 0 ? (wins.length / trades.length * 100) : 0;
+    const maxWin = wins.length > 0 ? Math.max(...wins.map(t => t.ret * NOTIONAL)) : 0;
+    const maxLoss = losses.length > 0 ? Math.min(...losses.map(t => t.ret * NOTIONAL)) : 0;
+
+    rows.push({ date: d, count: trades.length, wr, dayPnl, cumPnl, wins: wins.length, losses: losses.length, maxWin, maxLoss });
+  });
+
+  // 일자별 요약 테이블
+  const body = $('dailySummaryBody');
+  body.innerHTML = '';
+  rows.reverse().forEach(r => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="font-family:var(--font-mono)">${r.date}</td>
+      <td>${r.count}</td>
+      <td class="${r.wr >= 50 ? 'ok' : 'bad'}" style="font-weight:700">${r.wr.toFixed(0)}%</td>
+      <td class="${r.dayPnl >= 0 ? 'ok' : 'bad'}" style="font-family:var(--font-mono);font-weight:700">${r.dayPnl >= 0 ? '+' : ''}${r.dayPnl.toFixed(2)}$</td>
+      <td class="${r.cumPnl >= 0 ? 'ok' : 'bad'}" style="font-family:var(--font-mono);font-weight:700">${r.cumPnl >= 0 ? '+' : ''}${r.cumPnl.toFixed(2)}$</td>
+      <td style="color:var(--green)">${r.wins}</td>
+      <td style="color:var(--red)">${r.losses}</td>
+      <td style="font-family:var(--font-mono);color:var(--green)">${r.maxWin > 0 ? '+' + r.maxWin.toFixed(2) : '-'}</td>
+      <td style="font-family:var(--font-mono);color:var(--red)">${r.maxLoss < 0 ? r.maxLoss.toFixed(2) : '-'}</td>
+    `;
+    body.appendChild(tr);
+  });
+
+  // 누적 수익 차트 (SVG)
+  drawEquityCurve(rows.reverse());
+}
+
+function drawEquityCurve(rows) {
+  const el = $('equityCurve');
+  if (!rows.length) { el.innerHTML = '<div style="text-align:center;color:var(--muted);padding:40px">데이터 없음</div>'; return; }
+
+  const W = el.clientWidth || 800;
+  const H = 170;
+  const pad = { t: 10, b: 30, l: 55, r: 10 };
+  const iW = W - pad.l - pad.r;
+  const iH = H - pad.t - pad.b;
+
+  const vals = rows.map(r => r.cumPnl);
+  const minV = Math.min(0, ...vals);
+  const maxV = Math.max(0, ...vals);
+  const range = maxV - minV || 1;
+
+  const xStep = rows.length > 1 ? iW / (rows.length - 1) : iW;
+  const pts = rows.map((r, i) => {
+    const x = pad.l + i * xStep;
+    const y = pad.t + iH - ((r.cumPnl - minV) / range) * iH;
+    return { x, y, v: r.cumPnl, d: r.date };
+  });
+
+  const zeroY = pad.t + iH - ((0 - minV) / range) * iH;
+  const line = pts.map((p, i) => `${i === 0 ? 'M' : 'L'}${p.x},${p.y}`).join(' ');
+  const area = line + ` L${pts[pts.length-1].x},${zeroY} L${pts[0].x},${zeroY} Z`;
+
+  const lastPnl = vals[vals.length - 1];
+  const color = lastPnl >= 0 ? 'var(--green)' : 'var(--red)';
+
+  // Y-axis labels
+  const yLabels = [minV, minV + range * 0.5, maxV].map(v => {
+    const y = pad.t + iH - ((v - minV) / range) * iH;
+    return `<text x="${pad.l - 6}" y="${y + 4}" text-anchor="end" fill="var(--muted)" font-size="10" font-family="var(--font-mono)">${v >= 0 ? '+' : ''}${v.toFixed(1)}$</text>
+            <line x1="${pad.l}" y1="${y}" x2="${W - pad.r}" y2="${y}" stroke="var(--border)" stroke-dasharray="2,3"/>`;
+  }).join('');
+
+  // X-axis labels (every Nth)
+  const step = Math.max(1, Math.floor(rows.length / 8));
+  const xLabels = pts.filter((_, i) => i % step === 0 || i === pts.length - 1).map(p =>
+    `<text x="${p.x}" y="${H - 4}" text-anchor="middle" fill="var(--muted)" font-size="9" font-family="var(--font-mono)">${p.d.slice(5)}</text>`
+  ).join('');
+
+  el.innerHTML = `
+    <svg width="${W}" height="${H}" style="display:block">
+      ${yLabels}
+      <line x1="${pad.l}" y1="${zeroY}" x2="${W - pad.r}" y2="${zeroY}" stroke="var(--muted)" stroke-width="0.5" stroke-dasharray="4,4"/>
+      <path d="${area}" fill="${color}" fill-opacity="0.08"/>
+      <path d="${line}" fill="none" stroke="${color}" stroke-width="2"/>
+      ${pts.map(p => `<circle cx="${p.x}" cy="${p.y}" r="2.5" fill="${color}"/>`).join('')}
+      ${xLabels}
+    </svg>
+  `;
+}
+
+function buildDateFilter() {
+  const exits = allTrades.filter(t => t.type === 'EXIT');
+  const dates = [...new Set(exits.map(t => t.ts.slice(0, 10)))].sort().reverse();
+  const sel = $('tradeDateFilter');
+  sel.innerHTML = '<option value="all">전체</option>';
+  dates.forEach(d => {
+    const opt = document.createElement('option');
+    opt.value = d;
+    opt.textContent = d;
+    sel.appendChild(opt);
+  });
+}
+
+function renderTradeLog() {
+  const filter = $('tradeDateFilter').value;
+  let exits = allTrades.filter(t => t.type === 'EXIT' && t.ret !== undefined);
+  if (filter !== 'all') exits = exits.filter(t => t.ts.startsWith(filter));
+  exits.reverse();
+
+  const body = $('tradeLogBody');
+  body.innerHTML = '';
+  $('tradeLogEmpty').style.display = exits.length === 0 ? 'block' : 'none';
+
+  exits.slice(0, 200).forEach((t, i) => {
+    const pnlUsd = (t.ret || 0) * NOTIONAL;
+    const pctStr = ((t.ret || 0) * 100).toFixed(2);
+    const time = t.ts.replace('T', ' ').slice(0, 19);
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td style="color:var(--muted)">${i + 1}</td>
+      <td style="font-family:var(--font-mono);font-size:11px">${time}</td>
+      <td><strong style="font-family:var(--font-mono)">${(t.symbol || '').replace('USDT', '')}</strong></td>
+      <td><span class="badge ${t.side === 'LONG' ? 'badge-up' : 'badge-down'}">${t.side}</span></td>
+      <td><span class="badge" style="background:var(--bg3);color:${t.reason === 'TP' ? 'var(--green)' : t.reason === 'SL' ? 'var(--red)' : 'var(--yellow)'}">${t.reason || '-'}</span></td>
+      <td class="${pnlUsd >= 0 ? 'ok' : 'bad'}" style="font-family:var(--font-mono);font-weight:700">${pnlUsd >= 0 ? '+' : ''}${pctStr}%</td>
+      <td class="${pnlUsd >= 0 ? 'ok' : 'bad'}" style="font-family:var(--font-mono);font-weight:700">${pnlUsd >= 0 ? '+' : ''}${pnlUsd.toFixed(2)}$</td>
+    `;
+    body.appendChild(tr);
+  });
+}
+
+// 매매기록 탭 클릭 시 로드
+document.querySelectorAll('.tab').forEach(t => {
+  t.addEventListener('click', () => {
+    if (t.textContent.includes('매매기록') && allTrades.length === 0) loadTradeLog();
+  });
+});
+</script>
+</body>
+</html>
