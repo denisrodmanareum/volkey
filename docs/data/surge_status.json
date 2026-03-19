@@ -1,0 +1,166 @@
+{
+  "last_scan": "2026-03-19T08:57:29.904234+00:00",
+  "total_scanned": 538,
+  "candidates": [
+    {
+      "symbol": "PTBUSDT",
+      "anomaly_score": 0.4206,
+      "predicted_return": 0.021918,
+      "q10": 0.001374,
+      "q50": 0.001433,
+      "q90": 0.00148
+    },
+    {
+      "symbol": "MUSDT",
+      "anomaly_score": 0.4059,
+      "predicted_return": 0.019751,
+      "q10": 1.892667,
+      "q50": 1.976176,
+      "q90": 2.006552
+    },
+    {
+      "symbol": "ONTUSDT",
+      "anomaly_score": 0.3124,
+      "predicted_return": 0.004655,
+      "q10": 0.043012,
+      "q50": 0.0432,
+      "q90": 0.043497
+    },
+    {
+      "symbol": "USDCUSDT",
+      "anomaly_score": 0.3,
+      "predicted_return": 3e-06,
+      "q10": 0.999342,
+      "q50": 0.999348,
+      "q90": 0.999353
+    },
+    {
+      "symbol": "TRIAUSDT",
+      "anomaly_score": 0.2984,
+      "predicted_return": 0.012389,
+      "q10": 0.036968,
+      "q50": 0.038056,
+      "q90": 0.039441
+    },
+    {
+      "symbol": "YBUSDT",
+      "anomaly_score": 0.2947,
+      "predicted_return": 0.005634,
+      "q10": 0.122887,
+      "q50": 0.123995,
+      "q90": 0.1253
+    },
+    {
+      "symbol": "TAIKOUSDT",
+      "anomaly_score": 0.2931,
+      "predicted_return": 0.001067,
+      "q10": 0.126495,
+      "q50": 0.126735,
+      "q90": 0.126987
+    },
+    {
+      "symbol": "BEATUSDT",
+      "anomaly_score": 0.2925,
+      "predicted_return": 0.009043,
+      "q10": 0.579357,
+      "q50": 0.593721,
+      "q90": 0.602175
+    },
+    {
+      "symbol": "AIOUSDT",
+      "anomaly_score": 0.2868,
+      "predicted_return": 0.003308,
+      "q10": 0.084656,
+      "q50": 0.085221,
+      "q90": 0.085689
+    },
+    {
+      "symbol": "BTCDOMUSDT",
+      "anomaly_score": 0.2847,
+      "predicted_return": 7.6e-05,
+      "q10": 5004.254932,
+      "q50": 5012.979617,
+      "q90": 5018.687839
+    },
+    {
+      "symbol": "OGUSDT",
+      "anomaly_score": 0.2781,
+      "predicted_return": 0.000678,
+      "q10": 2.817929,
+      "q50": 2.825913,
+      "q90": 2.834291
+    },
+    {
+      "symbol": "DRIFTUSDT",
+      "anomaly_score": 0.2771,
+      "predicted_return": 0.000666,
+      "q10": 0.082472,
+      "q50": 0.082715,
+      "q90": 0.08297
+    },
+    {
+      "symbol": "DAMUSDT",
+      "anomaly_score": 0.2763,
+      "predicted_return": 0.000953,
+      "q10": 0.028887,
+      "q50": 0.028998,
+      "q90": 0.029094
+    },
+    {
+      "symbol": "ARKUSDT",
+      "anomaly_score": 0.2756,
+      "predicted_return": 0.000841,
+      "q10": 0.175401,
+      "q50": 0.176048,
+      "q90": 0.17659
+    },
+    {
+      "symbol": "FLOCKUSDT",
+      "anomaly_score": 0.2742,
+      "predicted_return": 0.001254,
+      "q10": 0.056894,
+      "q50": 0.057102,
+      "q90": 0.057375
+    },
+    {
+      "symbol": "AERGOUSDT",
+      "anomaly_score": 0.2741,
+      "predicted_return": 0.0005,
+      "q10": 0.054581,
+      "q50": 0.054727,
+      "q90": 0.054917
+    },
+    {
+      "symbol": "ARUSDT",
+      "anomaly_score": 0.2739,
+      "predicted_return": 0.001551,
+      "q10": 1.720994,
+      "q50": 1.731681,
+      "q90": 1.737121
+    },
+    {
+      "symbol": "AWEUSDT",
+      "anomaly_score": 0.2736,
+      "predicted_return": 0.001297,
+      "q10": 0.053785,
+      "q50": 0.05408,
+      "q90": 0.05425
+    },
+    {
+      "symbol": "SOLUSDT",
+      "anomaly_score": 0.2733,
+      "predicted_return": 0.000638,
+      "q10": 89.046748,
+      "q50": 89.396957,
+      "q90": 89.645947
+    },
+    {
+      "symbol": "DODOXUSDT",
+      "anomaly_score": 0.2721,
+      "predicted_return": 0.001007,
+      "q10": 0.014971,
+      "q50": 0.015043,
+      "q90": 0.015092
+    }
+  ]
+}
