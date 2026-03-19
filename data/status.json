@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T05:18:37+0900",
+  "updated_at": "2026-03-20T05:19:39+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,18 @@
     "realized_gross": 16.790399999999998,
     "commission": -1.9200000000000006,
     "realized_net": 14.870399999999998,
-    "unrealized": 0.0,
-    "total": 14.870399999999998
+    "unrealized": -0.15343999999998312,
+    "total": 14.716960000000014
   },
-  "positions": []
+  "positions": [
+    {
+      "symbol": "THEUSDT",
+      "side": "SHORT",
+      "qty": 767.2,
+      "entry": 0.1564,
+      "mark": 0.1566,
+      "unrealized_pnl": -0.15343999999998312,
+      "order_id": 1773951543759
+    }
+  ]
 }
