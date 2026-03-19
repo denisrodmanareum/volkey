@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T18:41:53+0900",
+  "updated_at": "2026-03-19T18:42:44+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 0.0,
-    "commission": 0.0,
-    "realized_net": 0.0,
+    "realized_gross": 14.1756,
+    "commission": -0.576,
+    "realized_net": 13.599599999999999,
     "unrealized": 0.0,
-    "total": 0.0
+    "total": 13.599599999999999
   },
   "positions": []
 }
