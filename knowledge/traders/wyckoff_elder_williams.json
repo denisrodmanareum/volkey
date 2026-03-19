@@ -1,0 +1,147 @@
+{
+  "traders": [
+    {
+      "trader": "Wyckoff",
+      "full_name": "Richard Wyckoff",
+      "style": "Volume / Price Structure",
+      "core_concepts": [
+        {
+          "name": "Spring",
+          "type": "pattern",
+          "description": "지지선 일시 하방 돌파 후 즉시 반등. 세력의 마지막 물량 흡수.",
+          "condition": "지지선 하방 돌파 + 거래량 급증 + 즉시 반등",
+          "entry": "Spring 캔들 저가 위로 반등 확인 시 롱",
+          "params": {"lookback": 20}
+        },
+        {
+          "name": "Upthrust",
+          "type": "pattern",
+          "description": "저항선 일시 상방 돌파 후 즉시 하락. Spring의 반대.",
+          "condition": "저항선 상방 돌파 + 거래량 급증 + 즉시 하락",
+          "entry": "Upthrust 캔들 고가 아래로 반락 확인 시 숏",
+          "params": {"lookback": 20}
+        },
+        {
+          "name": "Accumulation",
+          "type": "phase",
+          "phases": ["PS","SC","AR","ST","Spring","SOS","LPS"],
+          "description": "세력 매집 구조. Spring → SOS 돌파가 스캘핑 진입 포인트.",
+          "scalping_signal": "횡보 후 SOS(Sign of Strength) 거래량 돌파"
+        },
+        {
+          "name": "Composite Man",
+          "type": "concept",
+          "description": "세력(기관)의 의도 추적. 거래량 변화로 세력 포지션 방향 파악.",
+          "indicator": "거래량 증가 + 가격 횡보 = 세력 매집 신호"
+        }
+      ],
+      "indicators": [
+        {"name": "Volume", "type": "raw"},
+        {"name": "VWAP", "period": "session"},
+        {"name": "ATR", "period": 14}
+      ],
+      "scalping_notes": "5분봉 Spring/Upthrust + 거래량 확인이 핵심. 횡보 구간 폭이 클수록 이후 추세도 강함."
+    },
+    {
+      "trader": "Elder",
+      "full_name": "Alexander Elder",
+      "style": "Triple Screen / Momentum",
+      "core_concepts": [
+        {
+          "name": "Triple Screen",
+          "type": "multi_timeframe",
+          "description": "상위 TF 추세 → 중간 TF 모멘텀 → 하위 TF 진입 3단계.",
+          "screen1": {"tf": "15m", "tool": "MACD 방향 (추세 필터)"},
+          "screen2": {"tf": "5m",  "tool": "Stochastic 과매도/과매수"},
+          "screen3": {"tf": "1m",  "tool": "가격 진입 포인트"},
+          "scalping_apply": "15분봉 추세 방향 + 5분봉 모멘텀 확인 + 진입"
+        },
+        {
+          "name": "Force Index",
+          "type": "indicator",
+          "formula": "(close - prev_close) * volume",
+          "description": "가격 변화 × 거래량 = 세력 에너지. 양전환이 매수 신호.",
+          "signal": {
+            "buy":  "Force Index 음→양 전환 (2일 EMA)",
+            "sell": "Force Index 양→음 전환"
+          },
+          "params": {"ema_period": 2}
+        },
+        {
+          "name": "Elder Ray",
+          "type": "indicator",
+          "bull_power": "high - ema13  (매수세)",
+          "bear_power": "low  - ema13  (매도세)",
+          "signal": {
+            "buy":  "Bear Power 음수지만 상승 중 + 추세 상승",
+            "sell": "Bull Power 양수지만 하락 중 + 추세 하락"
+          }
+        }
+      ],
+      "indicators": [
+        {"name": "EMA",   "periods": [13, 26]},
+        {"name": "MACD",  "params": {"fast":12,"slow":26,"signal":9}},
+        {"name": "Force Index", "ema_period": 2},
+        {"name": "Stochastic",  "params": {"k":5,"d":3,"smooth":3}}
+      ],
+      "scalping_notes": "Force Index 2-EMA 양전환 + EMA13 위 가격 = 강한 스캘핑 매수 신호."
+    },
+    {
+      "trader": "Williams",
+      "full_name": "Larry Williams",
+      "style": "Momentum / Cycles",
+      "core_concepts": [
+        {
+          "name": "Williams %R",
+          "type": "indicator",
+          "formula": "(highest_high - close) / (highest_high - lowest_low) * -100",
+          "range": "-100 ~ 0",
+          "signal": {
+            "buy":  "-80 이하 (과매도) → 반등 시 매수",
+            "sell": "-20 이상 (과매수) → 하락 시 매도"
+          },
+          "params": {"period": 14},
+          "scalping_notes": "-85 이하에서 반등 첫 양봉 진입이 최적"
+        },
+        {
+          "name": "Williams Fractal",
+          "type": "pattern",
+          "description": "5캔들 패턴. 중앙 캔들이 주변 2개보다 높으면 상단 프랙탈.",
+          "bearish": "5캔들 중 중앙 고가가 최고 → 저항",
+          "bullish": "5캔들 중 중앙 저가가 최저 → 지지",
+          "params": {"bars": 5}
+        },
+        {
+          "name": "Alligator",
+          "type": "indicator",
+          "description": "13/8/5 SMMA 세 줄. 벌림=추세, 수렴=횡보.",
+          "jaw":   {"period": 13, "shift": 8,  "color": "blue"},
+          "teeth": {"period": 8,  "shift": 5,  "color": "red"},
+          "lips":  {"period": 5,  "shift": 3,  "color": "green"},
+          "signal": {
+            "buy":  "Lips > Teeth > Jaw 순서로 벌어지며 상승",
+            "sell": "Lips < Teeth < Jaw 순서로 벌어지며 하락",
+            "flat": "세 줄 수렴 → 진입 금지"
+          }
+        },
+        {
+          "name": "Ultimate Oscillator",
+          "type": "indicator",
+          "description": "7/14/28 세 주기 가중 평균 모멘텀.",
+          "signal": {
+            "buy":  "30 이하 과매도 후 반등",
+            "sell": "70 이상 과매수 후 하락"
+          },
+          "params": {"p1":7,"p2":14,"p3":28}
+        }
+      ],
+      "indicators": [
+        {"name": "Williams %R",         "period": 14},
+        {"name": "Alligator",           "params": {"jaw":13,"teeth":8,"lips":5}},
+        {"name": "Ultimate Oscillator", "params": {"p1":7,"p2":14,"p3":28}},
+        {"name": "Williams Fractal",    "bars": 5}
+      ],
+      "scalping_notes": "Alligator 벌림 + Williams %R -85 이하 반등 조합이 스캘핑 최강 신호."
+    }
+  ]
+}

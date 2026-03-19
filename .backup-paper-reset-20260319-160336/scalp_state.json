@@ -1,0 +1,37 @@
+{
+  "BTCUSDT": {
+    "equity": 290.9146052616377,
+    "position": "FLAT",
+    "entry": 0.0,
+    "qty": 0.0,
+    "last_key": "5m:1773903000000"
+  },
+  "ETHUSDT": {
+    "equity": 266.90265749052656,
+    "position": "FLAT",
+    "entry": 0.0,
+    "qty": 0.0,
+    "last_key": "5m:1773903000000"
+  },
+  "SOLUSDT": {
+    "equity": 273.5745431890613,
+    "position": "FLAT",
+    "entry": 0.0,
+    "qty": 0.0,
+    "last_key": "5m:1773903300000"
+  },
+  "BNBUSDT": {
+    "equity": 300.0,
+    "position": "FLAT",
+    "entry": 0.0,
+    "qty": 0.0,
+    "last_key": "5m:1773903000000"
+  },
+  "XRPUSDT": {
+    "equity": 272.53356684179806,
+    "position": "FLAT",
+    "entry": 0.0,
+    "qty": 0.0,
+    "last_key": "5m:1773903300000"
+  }
+}

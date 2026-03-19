@@ -1,0 +1,11 @@
+{
+  "_comment": "이 파일을 복사해서 실제 값을 입력하세요. .gitignore에 추가 필수!",
+  "binance_api_key":    "YOUR_BINANCE_API_KEY",
+  "binance_api_secret": "YOUR_BINANCE_API_SECRET",
+  "telegram_token":     "YOUR_TELEGRAM_BOT_TOKEN",
+  "telegram_chat_id":   "YOUR_TELEGRAM_CHAT_ID",
+  "leverage":           3,
+  "order_notional_usdt":40,
+  "dry_run":            true,
+  "max_positions":      6
+}

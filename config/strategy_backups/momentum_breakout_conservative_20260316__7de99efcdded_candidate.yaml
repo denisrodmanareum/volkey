@@ -1,0 +1,42 @@
+name: momentum_breakout_conservative_20260316_v12
+enabled: true
+min_candles: 95
+entry:
+  breakout:
+    enabled: true
+    long_lookback: 28
+    short_lookback: 28
+    source: close
+    use_live_bar: true
+  volume:
+    enabled: true
+    lookback: 25
+    spike_mult: 3.1
+  candle:
+    enabled: true
+    min_body_ratio: 0.4
+filters:
+  ema_trend:
+    enabled: true
+    fast_period: 25
+    slow_period: 60
+  rsi:
+    enabled: true
+    period: 14
+    long_min: 70
+    short_max: 30
+  macd:
+    enabled: false
+    fast_period: 12
+    slow_period: 26
+    signal_period: 9
+    require_histogram_confirmation: true
+  vwap:
+    enabled: false
+    long_above: true
+    short_below: true
+  price_structure:
+    enabled: true
+    swing_lookback: 12
+    require_long_higher_low: false
+    require_short_lower_high: false

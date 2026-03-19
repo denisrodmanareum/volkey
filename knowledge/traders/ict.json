@@ -1,0 +1,66 @@
+{
+  "trader": "ICT",
+  "full_name": "Inner Circle Trader (Michael Huddleston)",
+  "style": "Smart Money / Institutional",
+  "timeframes": ["1m","3m","5m","15m","1h","4h","1d"],
+  "core_concepts": [
+    {
+      "name": "Order Block (OB)",
+      "type": "structure",
+      "description": "기관이 대량 매수/매도한 마지막 캔들 구간. 가격이 재방문 시 강한 반응.",
+      "bullish_condition": "하락 후 마지막 하락 음봉 (다음에 급등 발생)",
+      "bearish_condition": "상승 후 마지막 상승 양봉 (다음에 급락 발생)",
+      "entry": "OB 구간 재진입 시 진입",
+      "invalidation": "OB 완전 관통 시 무효",
+      "params": {"lookback": 20}
+    },
+    {
+      "name": "Fair Value Gap (FVG)",
+      "type": "structure",
+      "description": "3캔들 패턴에서 발생한 미충전 가격 공백. 가격이 채우러 오는 경향.",
+      "bullish_condition": "캔들1 고가 < 캔들3 저가 (상승 FVG)",
+      "bearish_condition": "캔들1 저가 > 캔들3 고가 (하락 FVG)",
+      "entry": "FVG 구간 진입 시 반대 방향으로",
+      "params": {"min_gap_pct": 0.1}
+    },
+    {
+      "name": "Liquidity Sweep",
+      "type": "pattern",
+      "description": "이전 고점/저점 위아래 스탑헌팅 후 즉시 반전. 기관이 개인 스탑을 터트리는 구간.",
+      "bullish_condition": "이전 저점 하방 돌파 후 즉시 반등",
+      "bearish_condition": "이전 고점 상방 돌파 후 즉시 하락",
+      "entry": "스윕 확인 후 역방향 진입",
+      "params": {"sweep_pct": 0.05}
+    },
+    {
+      "name": "Kill Zone",
+      "type": "session",
+      "description": "기관 활동이 집중되는 시간대. 이 외 시간은 가짜 움직임 많음.",
+      "sessions": {
+        "london_open":  {"utc": "02:00-05:00", "kst": "11:00-14:00"},
+        "new_york_open":{"utc": "07:00-10:00", "kst": "16:00-19:00"},
+        "london_close": {"utc": "10:00-12:00", "kst": "19:00-21:00"}
+      }
+    },
+    {
+      "name": "Breaker Block",
+      "type": "structure",
+      "description": "무효화된 OB가 반대 방향 지지/저항으로 전환.",
+      "condition": "OB 관통 → 해당 구간이 반대 역할로 전환",
+      "params": {}
+    },
+    {
+      "name": "CISD",
+      "type": "pattern",
+      "description": "Change In State of Delivery. 추세 전환 확인 구조.",
+      "condition": "연속 고점/저점 갱신 실패 → 반대 방향 첫 돌파",
+      "params": {}
+    }
+  ],
+  "indicators": [
+    {"name": "EMA", "periods": [9, 13, 21, 50, 200]},
+    {"name": "ATR", "period": 14},
+    {"name": "Volume", "type": "raw"}
+  ],
+  "scalping_notes": "5분봉 기준 OB+FVG 동시 존재 구간이 최고 진입 포인트. Kill Zone 필수 필터."
+}

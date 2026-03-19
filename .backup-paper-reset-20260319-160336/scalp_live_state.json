@@ -1,0 +1,2679 @@
+{
+  "BTCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773903528
+  },
+  "ETHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 6605134511.178,
+    "prev_wall_ratio": 1.5038177096412357
+  },
+  "BCHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773371415,
+    "prev_oi": 26403896057.867,
+    "prev_wall_ratio": 2.013631635163275
+  },
+  "XRPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773374540,
+    "prev_oi": 7208715650166.2,
+    "prev_wall_ratio": 4.710124553529656
+  },
+  "LTCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 628396397.717,
+    "prev_wall_ratio": 1.4112620843282278
+  },
+  "TRXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773380080,
+    "prev_oi": 37212593541.0,
+    "prev_wall_ratio": 0.6537596741912542
+  },
+  "ETCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773648756
+  },
+  "LINKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 4520880605.16,
+    "prev_wall_ratio": 0.4819208925953248
+  },
+  "XLMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 209649954187.0,
+    "prev_wall_ratio": 0.882223892600473
+  },
+  "ADAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773375672,
+    "prev_oi": 184210453668.0,
+    "prev_wall_ratio": 0.934869644776064
+  },
+  "DASHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773374385,
+    "prev_oi": 2667983948.215,
+    "prev_wall_ratio": 1.9732376921610895
+  },
+  "ZECUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773694524
+  },
+  "XTZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 13942792494.0,
+    "prev_wall_ratio": 7.659546474943194
+  },
+  "BNBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 14109716075.26,
+    "prev_wall_ratio": 0.5990862496430021
+  },
+  "ATOMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 26915129151.53,
+    "prev_wall_ratio": 3.35548470921166
+  },
+  "ONTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773620029
+  },
+  "IOTAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 517491299228.0,
+    "prev_wall_ratio": 4.936160821315503
+  },
+  "BATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 446723455144.0,
+    "prev_wall_ratio": 3.1929752207176962
+  },
+  "VETUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773375269,
+    "prev_oi": 5070583966832.0,
+    "prev_wall_ratio": 1.0256433394012119
+  },
+  "NEOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773641112
+  },
+  "QTUMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773620607
+  },
+  "IOSTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 29344281394065.0,
+    "prev_wall_ratio": 0.8688129008581945
+  },
+  "THETAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773366377,
+    "prev_oi": 228369592040.6,
+    "prev_wall_ratio": 1.3318131561689783
+  },
+  "ALGOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 391630573543.7,
+    "prev_wall_ratio": 1.6547805825641984
+  },
+  "ZILUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 9021512183783.0,
+    "prev_wall_ratio": 4.3465631498932815
+  },
+  "KNCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 196131748148.0,
+    "prev_wall_ratio": 1.6226178314931394
+  },
+  "ZRXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773383536,
+    "prev_oi": 407504426884.2,
+    "prev_wall_ratio": 2.283963102024126
+  },
+  "COMPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773382448,
+    "prev_oi": 2520859308.578,
+    "prev_wall_ratio": 0.7460472075192859
+  },
+  "DOGEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SXPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898800000",
+    "prev_oi": 4679865756442.1,
+    "prev_wall_ratio": 9.935414749744979
+  },
+  "KAVAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773369974,
+    "prev_oi": 584360763390.7,
+    "prev_wall_ratio": 3.0720110678283303
+  },
+  "BANDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773380817
+  },
+  "RLCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773375122,
+    "prev_oi": 84836855241.8,
+    "prev_wall_ratio": 0.62889545601462
+  },
+  "SNXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 113015163406.2,
+    "prev_wall_ratio": 6.792530613066838
+  },
+  "DOTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773695152
+  },
+  "YFIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 13688857.126,
+    "prev_wall_ratio": 6.844672440639683
+  },
+  "CRVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773600254
+  },
+  "TRBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773383027
+  },
+  "RUNEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 72892594618.0,
+    "prev_wall_ratio": 1.160869599627912
+  },
+  "SUSHIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773375162,
+    "prev_oi": 219574731400.0,
+    "prev_wall_ratio": 6.382933711858538
+  },
+  "EGLDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 9584116340.2,
+    "prev_wall_ratio": 0.5509936388921575
+  },
+  "SOLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 1380767794.8,
+    "prev_wall_ratio": 1.2758842623920967
+  },
+  "ICXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 597660176645.0,
+    "prev_wall_ratio": 8.2324972690386
+  },
+  "STORJUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 422117234171.0,
+    "prev_wall_ratio": 8.97843509609086
+  },
+  "UNIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 13294709407.0,
+    "prev_wall_ratio": 0.5909318888554519
+  },
+  "AVAXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773380019,
+    "prev_oi": 4043410537.0,
+    "prev_wall_ratio": 0.7731257557436517
+  },
+  "ENJUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 2160051646510.0,
+    "prev_wall_ratio": 2.4729271056395254
+  },
+  "KSMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773642556
+  },
+  "NEARUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773366193,
+    "prev_oi": 45157071369.0,
+    "prev_wall_ratio": 1.6448230490817415
+  },
+  "AAVEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773380860,
+    "prev_oi": 415394394.1,
+    "prev_wall_ratio": 1.3122371731945592
+  },
+  "FILUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773688405
+  },
+  "RSRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 27879619625240.0,
+    "prev_wall_ratio": 2.6244466504205666
+  },
+  "LRCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773372804,
+    "prev_oi": 1370788813490.0,
+    "prev_wall_ratio": 0.2574926142110266
+  },
+  "BELUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 480019662225.0,
+    "prev_wall_ratio": 2.6438200888267893
+  },
+  "AXSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773366340,
+    "prev_oi": 68041958649.0,
+    "prev_wall_ratio": 2.7823239653152836
+  },
+  "ZENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773697262
+  },
+  "SKLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 5968989110292.0,
+    "prev_wall_ratio": 1.4926677031251738
+  },
+  "GRTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 1483794822983.0,
+    "prev_wall_ratio": 0.6681027185334302
+  },
+  "BNTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773365286,
+    "prev_oi": 123264554869.0,
+    "prev_wall_ratio": 1.1114526944455447
+  },
+  "1INCHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773366426,
+    "prev_oi": 392911470922.0,
+    "prev_wall_ratio": 4.745118536485089
+  },
+  "CHZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773370549,
+    "prev_oi": 1762343092288.0,
+    "prev_wall_ratio": 1.564564085498248
+  },
+  "SANDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 516653220405.0,
+    "prev_wall_ratio": 0.5672176875119852
+  },
+  "ANKRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 4778849224273.0,
+    "prev_wall_ratio": 6.977792335740835
+  },
+  "RVNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773705732
+  },
+  "SFPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773368871,
+    "prev_oi": 145915102621.0,
+    "prev_wall_ratio": 1.4490194314361629
+  },
+  "COTIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773601030
+  },
+  "CHRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MANAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773380939,
+    "prev_oi": 423995489505.0,
+    "prev_wall_ratio": 1.6556786856897663
+  },
+  "ALICEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773435375,
+    "prev_oi": 234268698209.6,
+    "prev_wall_ratio": 5.630083997945884
+  },
+  "HBARUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 427017996950.0,
+    "prev_wall_ratio": 0.5298249700679935
+  },
+  "ONEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 10767820662080.0,
+    "prev_wall_ratio": 2.1405328103236143
+  },
+  "DENTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 14202889409807.0,
+    "prev_wall_ratio": 9.97846480003857
+  },
+  "CELRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 8422388699569.0,
+    "prev_wall_ratio": 4.972020180291395
+  },
+  "HOTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MTLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773368874,
+    "prev_oi": 128750029851.0,
+    "prev_wall_ratio": 2.0122713186900154
+  },
+  "OGNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773409480,
+    "prev_oi": 862434630241.0,
+    "prev_wall_ratio": 3.8987473900152514
+  },
+  "1000SHIBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 6802600535312.0,
+    "prev_wall_ratio": 1.4470726679381902
+  },
+  "GTCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 167914234307.0,
+    "prev_wall_ratio": 6.39631232334169
+  },
+  "BTCDOMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773365292,
+    "prev_oi": 11745765.356,
+    "prev_wall_ratio": 0.3637485781341246
+  },
+  "MASKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "IOTXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "C98USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ATAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 634522196549.0,
+    "prev_wall_ratio": 1.2766444704987825
+  },
+  "DYDXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000XECUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GALAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CELOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773628487
+  },
+  "ARUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773394888,
+    "prev_oi": 27827896443.2,
+    "prev_wall_ratio": 1.349618189820298
+  },
+  "ARPAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CTSIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LPTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ENSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PEOPLEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ROSEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DUSKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FLOWUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773630817
+  },
+  "IMXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 306559399053.0,
+    "prev_wall_ratio": 1.6525684099105131
+  },
+  "API3USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GMTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "APEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "WOOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "JASMYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XMRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "INJUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "STGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773635077
+  },
+  "SPELLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000LUNCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LUNA2USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LDOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "APTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "QNTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FXSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000",
+    "prev_oi": 573035628617.0,
+    "prev_wall_ratio": 2.6303403957364093
+  },
+  "HOOKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773593500
+  },
+  "MAGICUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HIGHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MINAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ASTRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PHBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773629084
+  },
+  "FETUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773696173
+  },
+  "GMXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CFXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773637289
+  },
+  "STXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ACHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SSVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CKBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LQTYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "USDCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773894300000"
+  },
+  "ARBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "IDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 802391920335.0,
+    "prev_wall_ratio": 1.2951059936637423
+  },
+  "JOEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TRUUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RDNTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 5845022945566.0,
+    "prev_wall_ratio": 4.963395452742082
+  },
+  "HFTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XVSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773587265
+  },
+  "BLURUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "EDUUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000PEPEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773683207
+  },
+  "1000FLOKIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "UMAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SUIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NMRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MAVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773600987
+  },
+  "XVGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "WLDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PENDLEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ARKMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773566023
+  },
+  "AGLDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "YGGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DODOXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773596956
+  },
+  "OXTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 2507415953265.0,
+    "prev_wall_ratio": 1.5457469100109262
+  },
+  "SEIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CYBERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ARKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BICOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BIGTIMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "WAXPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BSVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RIFUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773891900000"
+  },
+  "POLYXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GASUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773641604
+  },
+  "POWRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CAKEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773663085
+  },
+  "MEMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TOKENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "ORDIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "STEEMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ILVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NTRNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 3239466709526.0,
+    "prev_wall_ratio": 1.0814058333410823
+  },
+  "KASUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BEAMXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000BONKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773655467
+  },
+  "PYTHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SUPERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "USTCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ONGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ETHWUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773418228,
+    "prev_oi": 126815749594.0,
+    "prev_wall_ratio": 0.09393811498797557
+  },
+  "JTOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000SATSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AUCTIONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000RATSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ACEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MOVRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TWTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NFPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773591729
+  },
+  "AIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 4099426807213.0,
+    "prev_wall_ratio": 0.35228162061080187,
+    "last_entry_ts": 1773390868
+  },
+  "WIFUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773667099
+  },
+  "MANTAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ONDOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LSKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ALTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 3387129616943.0,
+    "prev_wall_ratio": 4.610582120787272
+  },
+  "JUPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ZETAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RONINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DYMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898500000"
+  },
+  "PIXELUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773636344
+  },
+  "STRKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GLMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PORTALUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AXLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MYROUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898500000"
+  },
+  "METISUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AEVOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VANRYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BOMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773647189
+  },
+  "ETHFIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388500000"
+  },
+  "ENAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "WUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TNSRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SAGAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TAOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773622101
+  },
+  "REZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773644537
+  },
+  "BBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773430716,
+    "prev_oi": 1871941320751.0,
+    "prev_wall_ratio": 1.1067116634549978
+  },
+  "NOTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TURBOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773434121
+  },
+  "IOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773610985
+  },
+  "ZKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MEWUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773402157,
+    "prev_oi": 62772623742730.0,
+    "prev_wall_ratio": 3.2759605156181046
+  },
+  "LISTAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773576733
+  },
+  "ZROUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773634481
+  },
+  "RENDERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773427022,
+    "prev_oi": 49658946358.8,
+    "prev_wall_ratio": 1.2648203917806278
+  },
+  "BANANAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RAREUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773686071
+  },
+  "SYNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "SYSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VOXELUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773883500000"
+  },
+  "BRETTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773655350
+  },
+  "POPCATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SUNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388500000"
+  },
+  "DOGSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MBOXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773642031
+  },
+  "CHESSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773897900000"
+  },
+  "FLUXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "QUICKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773664200000"
+  },
+  "RPLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "POLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NEIROUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773648583
+  },
+  "1MBABYDOGEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773577399
+  },
+  "FIDAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FIOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773445620
+  },
+  "CATIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GHSTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773896100000"
+  },
+  "HMSTRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "REIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773897300000"
+  },
+  "COSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773698993
+  },
+  "EIGENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773637027
+  },
+  "DIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000CATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SCRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GOATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 2474253187532.0,
+    "prev_wall_ratio": 4.565621701359322
+  },
+  "MOODENGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773402110,
+    "prev_oi": 1395053536413.0,
+    "prev_wall_ratio": 0.8504576557681083
+  },
+  "SAFEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SANTOSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PONKEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773770100000"
+  },
+  "CETUSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "COWUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "1000000MOGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GRASSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773696054
+  },
+  "DRIFTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773652180
+  },
+  "SWELLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388500000"
+  },
+  "PNUTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ACTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HIPPOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773580559
+  },
+  "1000XUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773883500000"
+  },
+  "DEGENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773622781
+  },
+  "BANUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773878526
+  },
+  "AKTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SLERFUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "SCRTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773636026
+  },
+  "1000WHYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898500000",
+    "last_exit_ts": 1773631111
+  },
+  "1000CHEEMSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773638400
+  },
+  "THEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773703152
+  },
+  "MORPHOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CHILLGUYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "KAIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AEROUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 162781848489.8,
+    "prev_wall_ratio": 0.2383026875944763
+  },
+  "ACXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773885000000",
+    "prev_oi": 1634559000927.9,
+    "prev_wall_ratio": 0.6572286681850398
+  },
+  "ORCAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MOVEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RAYSOLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VIRTUALUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SPXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773697428
+  },
+  "KOMAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AVAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DEGOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773897274
+  },
+  "VELODROMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MOCAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VANAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PENGUUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773648923
+  },
+  "LUMIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "USUALUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "KMNOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773686103
+  },
+  "CGPTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773619813
+  },
+  "AIXBTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FARTCOINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773703446
+  },
+  "HIVEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DEXEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773897407
+  },
+  "PHAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773445099
+  },
+  "DFUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898500000"
+  },
+  "GRIFFAINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773592181
+  },
+  "ZEREBROUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773568585
+  },
+  "BIOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "COOKIEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ALCHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773890395
+  },
+  "SWARMSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SONICUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PROMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773607393
+  },
+  "SOLVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ARCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AVAAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TRUMPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773550274
+  },
+  "MELANIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773443181,
+    "prev_oi": 336210128968.91,
+    "prev_wall_ratio": 2.1791593886146914
+  },
+  "VTHOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ANIMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PIPPINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773682532
+  },
+  "VINEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VVVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773442619,
+    "prev_oi": 12141923720.02,
+    "prev_wall_ratio": 1.3360321650881601,
+    "last_entry_ts": 1773443217
+  },
+  "BERAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773561804
+  },
+  "TSTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LAYERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HEIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773602241
+  },
+  "B3USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "IPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GPSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 4432534488255.0,
+    "prev_wall_ratio": 0.9652443610386169
+  },
+  "SHELLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773633486
+  },
+  "KAITOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "REDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "VICUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "EPICUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BMTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MUBARAKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FORMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TUTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773639136
+  },
+  "BIDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773897900000"
+  },
+  "BROCCOLI714USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773437749
+  },
+  "BROCCOLIF3BUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BANANAS31USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773589844
+  },
+  "SIRENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773845192
+  },
+  "BRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PLUMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773610674
+  },
+  "JELLYJELLYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PAXGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 3757076.226,
+    "prev_wall_ratio": 2.044751066418221
+  },
+  "WALUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FUNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MLNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ATHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773623238
+  },
+  "BABYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773677829
+  },
+  "FORTHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PROMPTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "STOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773430276,
+    "prev_oi": 925907825530.0,
+    "prev_wall_ratio": 0.6079557780419182
+  },
+  "FHEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773555166
+  },
+  "KERNELUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "INITUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773594277
+  },
+  "BANKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "EPTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773897900000"
+  },
+  "DEEPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HYPERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FISUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773897300000"
+  },
+  "JSTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SIGNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773630785
+  },
+  "WCTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "GUNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PARTIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773696144
+  },
+  "NILUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PUNDIXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AIOTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DOLOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HAEDALUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SXTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ALPINEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773557659
+  },
+  "ASRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "B2USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "MILKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773894900000"
+  },
+  "SYRUPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OBOLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388500000"
+  },
+  "DOODUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773654342
+  },
+  "OGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ZKJUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SKYAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773685111
+  },
+  "NXPCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773838766
+  },
+  "AGTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773657118
+  },
+  "BUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773662546
+  },
+  "AUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773574520
+  },
+  "SOPHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MERLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HYPEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TAIKOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SQDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PUMPBTCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MYXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773696624
+  },
+  "FUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NEWTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "DMCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773898500000"
+  },
+  "HUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SAHARAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ICNTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BULLAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773446260
+  },
+  "IDOLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773425151,
+    "prev_oi": 3105226166782.0,
+    "prev_wall_ratio": 0.3666003196838346
+  },
+  "MUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773677508
+  },
+  "CROSSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773882151
+  },
+  "CUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773684226
+  },
+  "VELVETUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773561281
+  },
+  "TACUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ERAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773668712
+  },
+  "SLPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ZORAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TAGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773622454
+  },
+  "ZRCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773891300000"
+  },
+  "ESPORTSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773658971
+  },
+  "TREEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 635109658061.0,
+    "prev_wall_ratio": 3.655860954031205
+  },
+  "A2ZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773890760
+  },
+  "PLAYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773573097
+  },
+  "NAORISUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773611359
+  },
+  "TOWNSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773646723
+  },
+  "PROVEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ALLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "INUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "YALAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773896100000"
+  },
+  "CARVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AIOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XNYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773664330
+  },
+  "USELESSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773668407
+  },
+  "DAMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SAPIENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CUDISUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773887400000"
+  },
+  "AWEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SOONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HUMAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773634186
+  },
+  "LAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773585812
+  },
+  "RESOLVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773600777
+  },
+  "SPKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XPLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773698167
+  },
+  "WLFIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BASUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773649188
+  },
+  "BTRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773430477
+  },
+  "MITOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388200000"
+  },
+  "HEMIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LINEAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773565471
+  },
+  "QUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PTBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773636071
+  },
+  "ARIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773554735
+  },
+  "TAKEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BDXNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773684000000",
+    "last_exit_ts": 1773641300
+  },
+  "PUFFERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773887324
+  },
+  "PORT3USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773896100000"
+  },
+  "1000000BOBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SKATEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773886500000"
+  },
+  "HOMEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773593216
+  },
+  "FLOCKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SKYUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AVNTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HOLOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XPINUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773551940
+  },
+  "UBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TOSHIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "STBLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773591747
+  },
+  "0GUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BARDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773898027
+  },
+  "ASTERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 95580945699.0,
+    "prev_wall_ratio": 1.554002868126099
+  },
+  "TRADOORUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BLESSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773575264
+  },
+  "FLUIDUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773682905
+  },
+  "COAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "HANAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773639352
+  },
+  "MIRAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AKEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773559858
+  },
+  "ORDERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LIGHTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "XANUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773646659
+  },
+  "4USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GIGGLEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773633406
+  },
+  "YBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "METUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773422209
+  },
+  "EULUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "测试测试USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773891300000"
+  },
+  "LABUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773679800000",
+    "last_exit_ts": 1773587491
+  },
+  "RIVERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773634669
+  },
+  "币安人生USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "APRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773575283
+  },
+  "ONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "42USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773890700000"
+  },
+  "COMMONUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773663300000"
+  },
+  "KITEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "STABLEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "JCTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773546080
+  },
+  "CLANKERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BEATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773695981
+  },
+  "SENTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BOBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "POWERUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773549594
+  },
+  "WETUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388500000"
+  },
+  "NIGHTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773407993,
+    "prev_oi": 1183507555539.0,
+    "prev_wall_ratio": 0.9292896830617533
+  },
+  "USUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "prev_oi": 4816579659150.0,
+    "prev_wall_ratio": 4.878086435562322
+  },
+  "CYSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773674544
+  },
+  "RAVEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773577595
+  },
+  "ZKPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773697119
+  },
+  "GUAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "IRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773701905
+  },
+  "BREVUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "COLLECTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773658057
+  },
+  "MAGMAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773423595,
+    "prev_oi": 619882812253.0,
+    "prev_wall_ratio": 0.44204083102601915
+  },
+  "ZAMAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FOGOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FRAXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773547038
+  },
+  "SPORTFUNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ACUUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "我踏马来了USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SKRUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SPACEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773688135
+  },
+  "FIGHTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BIRBUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "GWEIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773595985
+  },
+  "MEGAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "INXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773547536
+  },
+  "TRIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000",
+    "last_exit_ts": 1773697451
+  },
+  "ESPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AZTECUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TANSSIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388800000"
+  },
+  "KDAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388800000"
+  },
+  "AI16ZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388800000"
+  },
+  "PERPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388800000"
+  },
+  "HIFIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773388800000"
+  },
+  "LYNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "KATUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "龙虾USDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OPNUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PUMPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "LITUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ROBOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CFGUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ENSOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ICPUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MANTRAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MAVIAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FOLKSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "NOMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "EDENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "MMTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ELSAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RECALLUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TRUSTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "2ZUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ZKCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ZBTUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "SOMIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "FFUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "BLUAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CTKUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "OPENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "RLSUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CVXUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "ALLOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "EVAAUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "AERGOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CLOUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "KGENUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TURTLEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "CVCUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TLMUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "UAIUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "TRUTHUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  },
+  "PIEVERSEUSDT": {
+    "position": "FLAT",
+    "last_key": "5m:1773903300000"
+  }
+}

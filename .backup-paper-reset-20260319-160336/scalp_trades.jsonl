@@ -1,0 +1,10 @@
+{"ts": "2026-03-12T02:54:17.639040+00:00", "symbol": "BTCUSDT", "iv": "5m", "type": "ENTRY", "side": "SHORT", "price": 69240.8, "qty": 0.005777}
+{"ts": "2026-03-12T02:54:17.894879+00:00", "symbol": "ETHUSDT", "iv": "3m", "type": "ENTRY", "side": "SHORT", "price": 2024.09, "qty": 0.19762}
+{"ts": "2026-03-12T03:47:32.250741+00:00", "symbol": "XRPUSDT", "iv": "1m", "type": "ENTRY", "side": "SHORT", "price": 1.3704, "qty": 291.885581}
+{"ts": "2026-03-12T03:48:05.471810+00:00", "symbol": "SOLUSDT", "iv": "3m", "type": "ENTRY", "side": "SHORT", "price": 84.88, "qty": 4.712535}
+{"ts": "2026-03-12T03:48:15.511871+00:00", "symbol": "SOLUSDT", "iv": "1m", "type": "EXIT", "side": "SHORT", "entry": 84.88, "exit": 85.55, "pnl": -3.16, "equity": 296.84}
+{"ts": "2026-03-12T03:48:25.678932+00:00", "symbol": "SOLUSDT", "iv": "1m", "type": "ENTRY", "side": "SHORT", "price": 84.88, "qty": 4.662938}
+{"ts": "2026-03-19T05:44:16.761730+00:00", "symbol": "BTCUSDT", "iv": "1m", "type": "EXIT", "side": "SHORT", "entry": 69240.8, "exit": 70813.5, "pnl": -9.09, "equity": 290.91, "strategy": "momentum_breakout_conservative_20260316_v14", "strategy_version": "b711ef4a7c26"}
+{"ts": "2026-03-19T05:44:17.122751+00:00", "symbol": "ETHUSDT", "iv": "1m", "type": "EXIT", "side": "SHORT", "entry": 2024.09, "exit": 2191.57, "pnl": -33.1, "equity": 266.9, "strategy": "momentum_breakout_conservative_20260316_v14", "strategy_version": "b711ef4a7c26"}
+{"ts": "2026-03-19T05:44:17.539405+00:00", "symbol": "SOLUSDT", "iv": "1m", "type": "EXIT", "side": "SHORT", "entry": 84.88, "exit": 89.87, "pnl": -23.27, "equity": 273.57, "strategy": "momentum_breakout_conservative_20260316_v14", "strategy_version": "b711ef4a7c26"}
+{"ts": "2026-03-19T05:44:18.345537+00:00", "symbol": "XRPUSDT", "iv": "1m", "type": "EXIT", "side": "SHORT", "entry": 1.3704, "exit": 1.4645, "pnl": -27.47, "equity": 272.53, "strategy": "momentum_breakout_conservative_20260316_v14", "strategy_version": "b711ef4a7c26"}

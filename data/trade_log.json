@@ -1,0 +1,62 @@
+[
+  {
+    "ts": "2026-03-19T08:09:50.668321+00:00",
+    "symbol": "ARIAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.02709,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-19T08:09:51.641281+00:00",
+    "symbol": "ARIAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.02709,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-19T08:13:35.300385+00:00",
+    "symbol": "XANUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.01651,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-19T08:19:47.555165+00:00",
+    "symbol": "XPLUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.0039,
+    "side": "SHORT",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T08:40:44.892205+00:00",
+    "symbol": "COSUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.04648,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-19T08:42:23.816191+00:00",
+    "symbol": "COSUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.03008,
+    "side": "LONG",
+    "reason": "TP"
+  }
+]
