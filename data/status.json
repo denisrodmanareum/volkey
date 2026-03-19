@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T03:13:12+0900",
+  "updated_at": "2026-03-20T03:14:15+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,18 +10,8 @@
     "realized_gross": 16.7628,
     "commission": -1.4400000000000002,
     "realized_net": 15.322799999999999,
-    "unrealized": -0.08745999999999643,
-    "total": 15.235340000000003
+    "unrealized": 0.0,
+    "total": 15.322799999999999
   },
-  "positions": [
-    {
-      "symbol": "SAHARAUSDT",
-      "side": "LONG",
-      "qty": 4373.0,
-      "entry": 0.02744,
-      "mark": 0.02742,
-      "unrealized_pnl": -0.08745999999999643,
-      "order_id": 1773943908884
-    }
-  ]
+  "positions": []
 }
