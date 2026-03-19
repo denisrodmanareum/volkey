@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T01:04:43+0900",
+  "updated_at": "2026-03-20T01:05:45+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,21 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 15.2952,
-    "commission": -1.0559999999999998,
-    "realized_net": 14.2392,
-    "unrealized": 0.9536999999999912,
-    "total": 15.192899999999991
+    "realized_gross": 17.376,
+    "commission": -1.248,
+    "realized_net": 16.128,
+    "unrealized": 0.0,
+    "total": 16.128
   },
-  "positions": [
-    {
-      "symbol": "ALCHUSDT",
-      "side": "LONG",
-      "qty": 1445.0,
-      "entry": 0.08304,
-      "mark": 0.0837,
-      "unrealized_pnl": 0.9536999999999912,
-      "order_id": 1773935853983
-    }
-  ]
+  "positions": []
 }
