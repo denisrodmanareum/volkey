@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-19T20:54:35+0900",
+  "updated_at": "2026-03-19T20:55:37+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,18 +10,8 @@
     "realized_gross": 14.0712,
     "commission": -0.6719999999999999,
     "realized_net": 13.399199999999999,
-    "unrealized": 0.052119999999997876,
-    "total": 13.451319999999997
+    "unrealized": 0.0,
+    "total": 13.399199999999999
   },
-  "positions": [
-    {
-      "symbol": "AIXBTUSDT",
-      "side": "SHORT",
-      "qty": 5212.0,
-      "entry": 0.02302,
-      "mark": 0.02301,
-      "unrealized_pnl": 0.052119999999997876,
-      "order_id": 1773920958254
-    }
-  ]
+  "positions": []
 }
