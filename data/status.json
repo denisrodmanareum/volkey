@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T06:43:15+0900",
+  "updated_at": "2026-03-20T06:44:17+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,18 +10,8 @@
     "realized_gross": 15.748799999999997,
     "commission": -2.400000000000001,
     "realized_net": 13.348799999999997,
-    "unrealized": -0.8299200000000073,
-    "total": 12.51887999999999
+    "unrealized": 0.0,
+    "total": 13.348799999999997
   },
-  "positions": [
-    {
-      "symbol": "RIFUSDT",
-      "side": "LONG",
-      "qty": 2964.0,
-      "entry": 0.04048,
-      "mark": 0.0402,
-      "unrealized_pnl": -0.8299200000000073,
-      "order_id": 1773946900171
-    }
-  ]
+  "positions": []
 }
