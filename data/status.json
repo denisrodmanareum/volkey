@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T17:16:23+0900",
+  "updated_at": "2026-03-20T17:17:26+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 1.9151999999999998,
-    "commission": -3.4560000000000017,
-    "realized_net": -1.540800000000002,
-    "unrealized": -11.426214889999994,
-    "total": -12.967014889999996
+    "realized_gross": 1.8011999999999997,
+    "commission": -3.552000000000002,
+    "realized_net": -1.7508000000000021,
+    "unrealized": -11.557970510000004,
+    "total": -13.308770510000006
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006393,
-      "unrealized_pnl": -10.028183000000004,
+      "mark": 0.006412,
+      "unrealized_pnl": -9.701364000000005,
       "order_id": 1773968397370
     },
     {
@@ -28,18 +28,9 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.581e-05,
-      "unrealized_pnl": -0.7892318899999894,
+      "mark": 6.575e-05,
+      "unrealized_pnl": -0.6791065099999966,
       "order_id": 1773974020149
-    },
-    {
-      "symbol": "FARTCOINUSDT",
-      "side": "LONG",
-      "qty": 568.7,
-      "entry": 0.211,
-      "mark": 0.212,
-      "unrealized_pnl": 0.5687000000000005,
-      "order_id": 1773994295883
     },
     {
       "symbol": "METUSDT",
