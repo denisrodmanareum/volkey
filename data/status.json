@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T22:25:44+0900",
+  "updated_at": "2026-03-20T22:26:47+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 3.4871999999999996,
     "commission": -4.416000000000002,
     "realized_net": -0.9288000000000025,
-    "unrealized": -10.333658240000005,
-    "total": -11.262458240000008
+    "unrealized": -10.213683180000007,
+    "total": -11.14248318000001
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006367,
-      "unrealized_pnl": -10.475409000000003,
+      "mark": 0.006349,
+      "unrealized_pnl": -10.785027000000014,
       "order_id": 1773968397370
     },
     {
@@ -28,8 +28,8 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.526e-05,
-      "unrealized_pnl": 0.22025076000001031,
+      "mark": 6.504e-05,
+      "unrealized_pnl": 0.6240438200000002,
       "order_id": 1773974020149
     },
     {
@@ -37,9 +37,18 @@
       "side": "SHORT",
       "qty": 785.0,
       "entry": 0.1528,
-      "mark": 0.1529,
-      "unrealized_pnl": -0.07850000000001314,
+      "mark": 0.1528,
+      "unrealized_pnl": -0.0,
       "order_id": 1773990160961
+    },
+    {
+      "symbol": "FETUSDT",
+      "side": "LONG",
+      "qty": 527.0,
+      "entry": 0.2273,
+      "mark": 0.2272,
+      "unrealized_pnl": -0.052699999999994196,
+      "order_id": 1774013183900
     }
   ]
 }
