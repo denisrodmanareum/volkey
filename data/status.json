@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T16:17:36+0900",
+  "updated_at": "2026-03-20T16:18:39+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 3.5855999999999995,
     "commission": -3.1680000000000015,
     "realized_net": 0.417599999999998,
-    "unrealized": -5.230496470000018,
-    "total": -4.81289647000002
+    "unrealized": -5.807761089999993,
+    "total": -5.390161089999996
   },
   "positions": [
     {
@@ -28,9 +28,18 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.527e-05,
-      "unrealized_pnl": 0.20189652999999497,
+      "mark": 6.521e-05,
+      "unrealized_pnl": 0.31202191000001256,
       "order_id": 1773974020149
+    },
+    {
+      "symbol": "ZETAUSDT",
+      "side": "LONG",
+      "qty": 2083.0,
+      "entry": 0.0576,
+      "mark": 0.05727,
+      "unrealized_pnl": -0.6873899999999937,
+      "order_id": 1773991065056
     },
     {
       "symbol": "METUSDT",
