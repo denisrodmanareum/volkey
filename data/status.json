@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T14:09:46+0900",
+  "updated_at": "2026-03-20T14:10:50+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,27 +10,63 @@
     "realized_gross": 3.132,
     "commission": -2.496000000000001,
     "realized_net": 0.6359999999999992,
-    "unrealized": -2.221527810000002,
-    "total": -1.585527810000003
+    "unrealized": 3.7093176000000225,
+    "total": 4.345317600000022
   },
   "positions": [
     {
       "symbol": "AGTUSDT",
       "side": "LONG",
-      "qty": 17201.0,
-      "entry": 0.006976,
-      "mark": 0.006897,
-      "unrealized_pnl": -1.3588790000000013,
-      "order_id": 1773968397370
+      "qty": 17174.0,
+      "entry": 0.006987,
+      "mark": 0.006892,
+      "unrealized_pnl": -1.631530000000008,
+      "order_id": 1773968403356
     },
     {
       "symbol": "NEIROUSDT",
       "side": "SHORT",
-      "qty": 1835423.0,
-      "entry": 6.538e-05,
-      "mark": 6.585e-05,
-      "unrealized_pnl": -0.862648810000001,
-      "order_id": 1773974020149
+      "qty": 1835704.0,
+      "entry": 6.537e-05,
+      "mark": 6.597e-05,
+      "unrealized_pnl": -1.101422399999977,
+      "order_id": 1773974017407
+    },
+    {
+      "symbol": "SIRENUSDT",
+      "side": "LONG",
+      "qty": 143.0,
+      "entry": 0.83445,
+      "mark": 0.89525,
+      "unrealized_pnl": 8.694399999999995,
+      "order_id": 1773973247163
+    },
+    {
+      "symbol": "TAOUSDT",
+      "side": "LONG",
+      "qty": 0.395,
+      "entry": 303.13,
+      "mark": 302.73,
+      "unrealized_pnl": -0.15799999999999104,
+      "order_id": 1773983430557
+    },
+    {
+      "symbol": "RAYSOLUSDT",
+      "side": "SHORT",
+      "qty": 196.60000000000002,
+      "entry": 0.6101,
+      "mark": 0.6144,
+      "unrealized_pnl": -0.8453799999999942,
+      "order_id": 1773974041397
+    },
+    {
+      "symbol": "CLOUSDT",
+      "side": "LONG",
+      "qty": 1665.0,
+      "entry": 0.07205,
+      "mark": 0.0713,
+      "unrealized_pnl": -1.2487500000000011,
+      "order_id": 1773964902507
     }
   ]
 }
