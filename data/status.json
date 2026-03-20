@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T04:11:34+0900",
+  "updated_at": "2026-03-21T04:12:37+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 5.967599999999999,
     "commission": -5.9520000000000035,
     "realized_net": 0.015599999999995617,
-    "unrealized": 8.244671519999976,
-    "total": 8.260271519999971
+    "unrealized": 8.5560646,
+    "total": 8.571664599999995
   },
   "positions": [
     {
@@ -19,17 +19,26 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.007323,
-      "unrealized_pnl": 5.968746999999986,
+      "mark": 0.007333,
+      "unrealized_pnl": 6.1407569999999945,
       "order_id": 1773968397370
+    },
+    {
+      "symbol": "RIVERUSDT",
+      "side": "SHORT",
+      "qty": 5.6000000000000005,
+      "entry": 21.086,
+      "mark": 21.048,
+      "unrealized_pnl": 0.21280000000000146,
+      "order_id": 1774033919865
     },
     {
       "symbol": "NEIROUSDT",
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.414e-05,
-      "unrealized_pnl": 2.2759245199999905,
+      "mark": 6.418e-05,
+      "unrealized_pnl": 2.2025076000000037,
       "order_id": 1773974020149
     }
   ]
