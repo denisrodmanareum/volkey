@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T05:04:58+0900",
+  "updated_at": "2026-03-21T05:06:01+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 6.513599999999999,
-    "commission": -6.048000000000004,
-    "realized_net": 0.4655999999999958,
-    "unrealized": 10.21151274999999,
-    "total": 10.677112749999985
+    "realized_gross": 7.1004,
+    "commission": -6.144000000000004,
+    "realized_net": 0.9563999999999959,
+    "unrealized": 10.076050129999988,
+    "total": 11.032450129999983
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.007402,
-      "unrealized_pnl": 7.327625999999988,
+      "mark": 0.007422,
+      "unrealized_pnl": 7.671645999999988,
       "order_id": 1773968397370
     },
     {
@@ -28,18 +28,9 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.413e-05,
-      "unrealized_pnl": 2.294278750000006,
+      "mark": 6.407e-05,
+      "unrealized_pnl": 2.4044041299999988,
       "order_id": 1773974020149
-    },
-    {
-      "symbol": "GWEIUSDT",
-      "side": "LONG",
-      "qty": 2586.0,
-      "entry": 0.046397,
-      "mark": 0.046625,
-      "unrealized_pnl": 0.5896079999999975,
-      "order_id": 1774036257962
     }
   ]
 }
