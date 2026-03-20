@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T14:16:05+0900",
+  "updated_at": "2026-03-20T14:17:08+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 0.9072,
-    "commission": -2.592000000000001,
-    "realized_net": -1.684800000000001,
-    "unrealized": -0.9324738799999828,
-    "total": -2.617273879999984
+    "realized_gross": 3.7776,
+    "commission": -2.688000000000001,
+    "realized_net": 1.089599999999999,
+    "unrealized": -2.51173580000001,
+    "total": -1.422135800000011
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006889,
-      "unrealized_pnl": -1.4964870000000046,
+      "mark": 0.006894,
+      "unrealized_pnl": -1.4104820000000082,
       "order_id": 1773968397370
     },
     {
@@ -28,18 +28,9 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.594e-05,
-      "unrealized_pnl": -1.0278368799999902,
+      "mark": 6.598e-05,
+      "unrealized_pnl": -1.1012538000000018,
       "order_id": 1773974020149
-    },
-    {
-      "symbol": "TAOUSDT",
-      "side": "LONG",
-      "qty": 0.395,
-      "entry": 303.13,
-      "mark": 307.16,
-      "unrealized_pnl": 1.5918500000000118,
-      "order_id": 1773983429994
     }
   ]
 }
