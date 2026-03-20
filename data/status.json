@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T05:52:04+0900",
+  "updated_at": "2026-03-21T05:53:07+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 7.1004,
-    "commission": -6.144000000000004,
-    "realized_net": 0.9563999999999959,
-    "unrealized": 8.42898497999999,
-    "total": 9.385384979999987
+    "realized_gross": 5.8068,
+    "commission": -6.240000000000004,
+    "realized_net": -0.4332000000000038,
+    "unrealized": 8.409859589999991,
+    "total": 7.976659589999987
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.007328,
-      "unrealized_pnl": 6.054751999999998,
+      "mark": 0.007323,
+      "unrealized_pnl": 5.968746999999986,
       "order_id": 1773968397370
     },
     {
@@ -28,18 +28,9 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.412e-05,
-      "unrealized_pnl": 2.3126329799999965,
+      "mark": 6.405e-05,
+      "unrealized_pnl": 2.441112590000005,
       "order_id": 1773974020149
-    },
-    {
-      "symbol": "GUNUSDT",
-      "side": "LONG",
-      "qty": 6160.0,
-      "entry": 0.01948,
-      "mark": 0.01949,
-      "unrealized_pnl": 0.06159999999999749,
-      "order_id": 1774039785195
     }
   ]
 }
