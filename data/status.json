@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T13:30:51+0900",
+  "updated_at": "2026-03-20T13:31:55+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,36 +10,63 @@
     "realized_gross": 5.5608,
     "commission": -2.1120000000000005,
     "realized_net": 3.4488,
-    "unrealized": -0.5134176899999952,
-    "total": 2.935382310000005
+    "unrealized": 7.392641199999978,
+    "total": 10.841441199999977
   },
   "positions": [
     {
       "symbol": "AGTUSDT",
       "side": "LONG",
-      "qty": 17201.0,
-      "entry": 0.006976,
-      "mark": 0.006961,
-      "unrealized_pnl": -0.2580150000000044,
-      "order_id": 1773968397370
+      "qty": 17174.0,
+      "entry": 0.006987,
+      "mark": 0.006951,
+      "unrealized_pnl": -0.6182640000000076,
+      "order_id": 1773968403356
     },
     {
       "symbol": "NEIROUSDT",
       "side": "SHORT",
-      "qty": 1835423.0,
-      "entry": 6.538e-05,
-      "mark": 6.541e-05,
-      "unrealized_pnl": -0.05506268999999636,
-      "order_id": 1773974020149
+      "qty": 1835704.0,
+      "entry": 6.537e-05,
+      "mark": 6.532e-05,
+      "unrealized_pnl": 0.09178520000000223,
+      "order_id": 1773974017407
     },
     {
-      "symbol": "APRUSDT",
+      "symbol": "SIRENUSDT",
+      "side": "LONG",
+      "qty": 143.0,
+      "entry": 0.83445,
+      "mark": 0.89972,
+      "unrealized_pnl": 9.333609999999991,
+      "order_id": 1773973247163
+    },
+    {
+      "symbol": "GUNUSDT",
+      "side": "LONG",
+      "qty": 6575.0,
+      "entry": 0.01825,
+      "mark": 0.01825,
+      "unrealized_pnl": 0.0,
+      "order_id": 1773981091862
+    },
+    {
+      "symbol": "RAYSOLUSDT",
       "side": "SHORT",
-      "qty": 742.0,
-      "entry": 0.16166,
-      "mark": 0.16193,
-      "unrealized_pnl": -0.2003399999999944,
-      "order_id": 1773981011913
+      "qty": 196.60000000000002,
+      "entry": 0.6101,
+      "mark": 0.6145,
+      "unrealized_pnl": -0.865040000000014,
+      "order_id": 1773974041397
+    },
+    {
+      "symbol": "CLOUSDT",
+      "side": "LONG",
+      "qty": 1665.0,
+      "entry": 0.07205,
+      "mark": 0.07172,
+      "unrealized_pnl": -0.5494499999999949,
+      "order_id": 1773964902507
     }
   ]
 }
