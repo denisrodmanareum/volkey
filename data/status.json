@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T18:09:59+0900",
+  "updated_at": "2026-03-20T18:11:02+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 0.25799999999999956,
-    "commission": -3.744000000000002,
-    "realized_net": -3.4860000000000024,
-    "unrealized": -11.990806940000029,
-    "total": -15.476806940000031
+    "realized_gross": -1.0284000000000004,
+    "commission": -3.840000000000002,
+    "realized_net": -4.868400000000003,
+    "unrealized": -10.945628480000016,
+    "total": -15.814028480000019
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006336,
-      "unrealized_pnl": -11.008640000000014,
+      "mark": 0.006346,
+      "unrealized_pnl": -10.836630000000007,
       "order_id": 1773968397370
     },
     {
@@ -28,18 +28,9 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.516e-05,
-      "unrealized_pnl": 0.40379305999998993,
+      "mark": 6.514e-05,
+      "unrealized_pnl": 0.44050151999999576,
       "order_id": 1773974020149
-    },
-    {
-      "symbol": "PIPPINUSDT",
-      "side": "SHORT",
-      "qty": 1549.0,
-      "entry": 0.07746,
-      "mark": 0.078,
-      "unrealized_pnl": -0.8364599999999982,
-      "order_id": 1773997728060
     },
     {
       "symbol": "METUSDT",
