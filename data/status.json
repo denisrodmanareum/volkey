@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T10:16:27+0900",
+  "updated_at": "2026-03-20T10:17:30+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,36 +10,36 @@
     "realized_gross": -4.6091999999999995,
     "commission": -0.576,
     "realized_net": -5.185199999999999,
-    "unrealized": -0.30849300000000807,
-    "total": -5.4936930000000075
+    "unrealized": -1.5952150000000007,
+    "total": -6.780415
   },
   "positions": [
     {
       "symbol": "AGTUSDT",
       "side": "LONG",
-      "qty": 17201.0,
-      "entry": 0.006976,
-      "mark": 0.006955,
-      "unrealized_pnl": -0.3612210000000032,
-      "order_id": 1773968397370
+      "qty": 17174.0,
+      "entry": 0.006987,
+      "mark": 0.00694,
+      "unrealized_pnl": -0.8071780000000028,
+      "order_id": 1773968403356
     },
     {
       "symbol": "WAXPUSDT",
       "side": "LONG",
       "qty": 16179.0,
       "entry": 0.007417,
-      "mark": 0.007449,
-      "unrealized_pnl": 0.5177279999999985,
-      "order_id": 1773969302431
+      "mark": 0.007464,
+      "unrealized_pnl": 0.7604130000000027,
+      "order_id": 1773969303596
     },
     {
-      "symbol": "QNTUSDT",
+      "symbol": "CLOUSDT",
       "side": "LONG",
-      "qty": 1.5,
-      "entry": 75.42,
-      "mark": 75.11,
-      "unrealized_pnl": -0.4650000000000034,
-      "order_id": 1773968561707
+      "qty": 1665.0,
+      "entry": 0.07205,
+      "mark": 0.07112,
+      "unrealized_pnl": -1.5484500000000005,
+      "order_id": 1773964902507
     }
   ]
 }
