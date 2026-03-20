@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T03:55:50+0900",
+  "updated_at": "2026-03-21T03:56:53+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 5.104799999999999,
     "commission": -5.760000000000003,
     "realized_net": -0.6552000000000042,
-    "unrealized": 8.076653849999992,
-    "total": 7.421453849999988
+    "unrealized": 7.862705299999991,
+    "total": 7.207505299999987
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.007286,
-      "unrealized_pnl": 5.332309999999992,
+      "mark": 0.007284,
+      "unrealized_pnl": 5.297907999999987,
       "order_id": 1773968397370
     },
     {
@@ -28,8 +28,8 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.443e-05,
-      "unrealized_pnl": 1.7436518499999927,
+      "mark": 6.428e-05,
+      "unrealized_pnl": 2.018965299999999,
       "order_id": 1773974020149
     },
     {
@@ -37,8 +37,8 @@
       "side": "LONG",
       "qty": 12996.0,
       "entry": 0.009233,
-      "mark": 0.00931,
-      "unrealized_pnl": 1.0006920000000088,
+      "mark": 0.009275,
+      "unrealized_pnl": 0.5458320000000048,
       "order_id": 1774022519483
     }
   ]
