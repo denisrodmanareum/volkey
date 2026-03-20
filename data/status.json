@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T17:11:08+0900",
+  "updated_at": "2026-03-20T17:12:11+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 2.1155999999999997,
     "commission": -3.3600000000000017,
     "realized_net": -1.244400000000002,
-    "unrealized": -11.158823430000009,
-    "total": -12.403223430000011
+    "unrealized": -10.88561088999997,
+    "total": -12.130010889999973
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006416,
-      "unrealized_pnl": -9.63256000000001,
+      "mark": 0.006407,
+      "unrealized_pnl": -9.787369000000002,
       "order_id": 1773968397370
     },
     {
@@ -28,17 +28,26 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.579e-05,
-      "unrealized_pnl": -0.7525234300000083,
+      "mark": 6.581e-05,
+      "unrealized_pnl": -0.7892318899999894,
       "order_id": 1773974020149
+    },
+    {
+      "symbol": "FARTCOINUSDT",
+      "side": "LONG",
+      "qty": 568.7,
+      "entry": 0.211,
+      "mark": 0.2117,
+      "unrealized_pnl": 0.39809000000000355,
+      "order_id": 1773994295883
     },
     {
       "symbol": "TAOUSDT",
       "side": "LONG",
       "qty": 0.392,
       "entry": 305.59,
-      "mark": 306.62,
-      "unrealized_pnl": 0.4037600000000116,
+      "mark": 306.79,
+      "unrealized_pnl": 0.47040000000001786,
       "order_id": 1773994211427
     },
     {
