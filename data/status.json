@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T13:07:42+0900",
+  "updated_at": "2026-03-20T13:08:46+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": -1.7195999999999994,
     "commission": -1.8240000000000005,
     "realized_net": -3.5435999999999996,
-    "unrealized": 7.377024879999954,
-    "total": 3.8334248799999546
+    "unrealized": 7.789227919999993,
+    "total": 4.245627919999993
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17174.0,
       "entry": 0.006987,
-      "mark": 0.006876,
-      "unrealized_pnl": -1.9063139999999998,
+      "mark": 0.006875,
+      "unrealized_pnl": -1.923488000000002,
       "order_id": 1773968403356
     },
     {
@@ -28,8 +28,8 @@
       "side": "SHORT",
       "qty": 1835704.0,
       "entry": 6.537e-05,
-      "mark": 6.54e-05,
-      "unrealized_pnl": -0.055071119999996365,
+      "mark": 6.539e-05,
+      "unrealized_pnl": -0.03671407999998099,
       "order_id": 1773974017407
     },
     {
@@ -37,8 +37,8 @@
       "side": "LONG",
       "qty": 143.0,
       "entry": 0.83445,
-      "mark": 0.90888,
-      "unrealized_pnl": 10.64349,
+      "mark": 0.90758,
+      "unrealized_pnl": 10.457590000000003,
       "order_id": 1773973247163
     },
     {
@@ -46,8 +46,8 @@
       "side": "LONG",
       "qty": 0.41300000000000003,
       "entry": 290.16,
-      "mark": 290.78,
-      "unrealized_pnl": 0.2560599999999784,
+      "mark": 292.39,
+      "unrealized_pnl": 0.9209899999999841,
       "order_id": 1773979535729
     },
     {
@@ -55,8 +55,8 @@
       "side": "SHORT",
       "qty": 196.60000000000002,
       "entry": 0.6101,
-      "mark": 0.6155,
-      "unrealized_pnl": -1.0616400000000141,
+      "mark": 0.6161,
+      "unrealized_pnl": -1.179600000000001,
       "order_id": 1773974041397
     },
     {
@@ -64,8 +64,8 @@
       "side": "LONG",
       "qty": 1665.0,
       "entry": 0.07205,
-      "mark": 0.07175,
-      "unrealized_pnl": -0.4995000000000143,
+      "mark": 0.07178,
+      "unrealized_pnl": -0.44955000000001055,
       "order_id": 1773964902507
     }
   ]
