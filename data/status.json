@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T20:30:50+0900",
+  "updated_at": "2026-03-20T20:31:53+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 0.7691999999999997,
-    "commission": -4.128000000000002,
-    "realized_net": -3.3588000000000022,
-    "unrealized": -10.226406930000017,
-    "total": -13.58520693000002
+    "realized_gross": 0.6263999999999996,
+    "commission": -4.224000000000002,
+    "realized_net": -3.5976000000000026,
+    "unrealized": -10.192004930000028,
+    "total": -13.789604930000031
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006381,
-      "unrealized_pnl": -10.234595,
+      "mark": 0.006383,
+      "unrealized_pnl": -10.200193000000011,
       "order_id": 1773968397370
     },
     {
@@ -40,15 +40,6 @@
       "mark": 0.153,
       "unrealized_pnl": -0.1570000000000045,
       "order_id": 1773990160961
-    },
-    {
-      "symbol": "CELOUSDT",
-      "side": "LONG",
-      "qty": 1431.9,
-      "entry": 0.0838,
-      "mark": 0.0838,
-      "unrealized_pnl": 0.0,
-      "order_id": 1774005998961
     }
   ]
 }
