@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T07:32:37+0900",
+  "updated_at": "2026-03-21T07:33:40+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,29 +7,20 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 3.9432,
-    "commission": -6.528000000000004,
-    "realized_net": -2.584800000000004,
-    "unrealized": 8.594165319999995,
-    "total": 6.009365319999991
+    "realized_gross": 10.9956,
+    "commission": -6.624000000000004,
+    "realized_net": 4.3715999999999955,
+    "unrealized": 1.4499841699999954,
+    "total": 5.821584169999991
   },
   "positions": [
-    {
-      "symbol": "AGTUSDT",
-      "side": "LONG",
-      "qty": 17201.0,
-      "entry": 0.006976,
-      "mark": 0.007386,
-      "unrealized_pnl": 7.0524099999999965,
-      "order_id": 1773968397370
-    },
     {
       "symbol": "NEIROUSDT",
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.454e-05,
-      "unrealized_pnl": 1.5417553199999976,
+      "mark": 6.459e-05,
+      "unrealized_pnl": 1.4499841699999954,
       "order_id": 1773974020149
     }
   ]
