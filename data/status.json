@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T20:42:30+0900",
+  "updated_at": "2026-03-20T20:43:33+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 0.6263999999999996,
     "commission": -4.224000000000002,
     "realized_net": -3.5976000000000026,
-    "unrealized": -10.28772394000003,
-    "total": -13.885323940000031
+    "unrealized": -8.851011940000024,
+    "total": -12.448611940000028
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006359,
-      "unrealized_pnl": -10.613017000000006,
+      "mark": 0.006361,
+      "unrealized_pnl": -10.578615000000001,
       "order_id": 1773968397370
     },
     {
@@ -40,6 +40,15 @@
       "mark": 0.1529,
       "unrealized_pnl": -0.07850000000001314,
       "order_id": 1773990160961
+    },
+    {
+      "symbol": "WAXPUSDT",
+      "side": "LONG",
+      "qty": 15410.0,
+      "entry": 0.007787,
+      "mark": 0.007878,
+      "unrealized_pnl": 1.402309999999999,
+      "order_id": 1774006990029
     }
   ]
 }
