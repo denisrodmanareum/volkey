@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-20T17:59:28+0900",
+  "updated_at": "2026-03-20T18:00:31+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -10,8 +10,8 @@
     "realized_gross": 1.5695999999999997,
     "commission": -3.648000000000002,
     "realized_net": -2.078400000000002,
-    "unrealized": -11.036911460000006,
-    "total": -13.115311460000008
+    "unrealized": -11.799424160000008,
+    "total": -13.87782416000001
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "LONG",
       "qty": 17201.0,
       "entry": 0.006976,
-      "mark": 0.006373,
-      "unrealized_pnl": -10.372203000000004,
+      "mark": 0.006318,
+      "unrealized_pnl": -11.31825800000001,
       "order_id": 1773968397370
     },
     {
@@ -28,8 +28,8 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.54e-05,
-      "unrealized_pnl": -0.03670846000000587,
+      "mark": 6.53e-05,
+      "unrealized_pnl": 0.1468338399999986,
       "order_id": 1773974020149
     },
     {
@@ -40,6 +40,15 @@
       "mark": 0.1536,
       "unrealized_pnl": -0.6279999999999962,
       "order_id": 1773990160961
+    },
+    {
+      "symbol": "JCTUSDT",
+      "side": "LONG",
+      "qty": 46856.0,
+      "entry": 0.002561,
+      "mark": 0.002561,
+      "unrealized_pnl": 0.0,
+      "order_id": 1773997173575
     }
   ]
 }
