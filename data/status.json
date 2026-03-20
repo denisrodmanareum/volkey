@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-03-21T08:32:21+0900",
+  "updated_at": "2026-03-21T08:33:24+0900",
   "config": {
     "margin_mode": "ISOLATED",
     "leverage": 3,
@@ -7,11 +7,11 @@
     "order_notional_usdt": 40
   },
   "pnl": {
-    "realized_gross": 12.454799999999999,
-    "commission": -6.720000000000004,
-    "realized_net": 5.734799999999995,
-    "unrealized": 2.0749006599999973,
-    "total": 7.809700659999992
+    "realized_gross": 12.03,
+    "commission": -6.816000000000004,
+    "realized_net": 5.213999999999995,
+    "unrealized": 2.492664129999995,
+    "total": 7.70666412999999
   },
   "positions": [
     {
@@ -19,8 +19,8 @@
       "side": "SHORT",
       "qty": 1835423.0,
       "entry": 6.538e-05,
-      "mark": 6.396e-05,
-      "unrealized_pnl": 2.606300659999994,
+      "mark": 6.407e-05,
+      "unrealized_pnl": 2.4044041299999988,
       "order_id": 1773974020149
     },
     {
@@ -28,18 +28,9 @@
       "side": "LONG",
       "qty": 17652.0,
       "entry": 0.006798,
-      "mark": 0.006798,
-      "unrealized_pnl": 0.0,
+      "mark": 0.006803,
+      "unrealized_pnl": 0.0882599999999964,
       "order_id": 1774046175733
-    },
-    {
-      "symbol": "XAIUSDT",
-      "side": "LONG",
-      "qty": 10628.0,
-      "entry": 0.01129,
-      "mark": 0.01124,
-      "unrealized_pnl": -0.5313999999999968,
-      "order_id": 1774049317791
     }
   ]
 }
