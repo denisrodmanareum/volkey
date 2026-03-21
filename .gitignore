@@ -15,3 +15,8 @@ __pycache__/
 # OS
 .DS_Store
 Thumbs.db
+data/status.json
+data/surge_status.json
+data/trade_log.json
+data/evolution_log.json
+data/scalp_strategy_state.json
