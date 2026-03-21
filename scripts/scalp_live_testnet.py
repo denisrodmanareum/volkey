@@ -18,6 +18,8 @@ import yaml
 
 BASE = Path('/Users/riot91naver.com/Desktop/2026/volky-bot')
 sys.path.insert(0, str(BASE))
+
+from engine.telegram_bot import notify_entry, notify_close, notify_daily_report
 from strategies.scalp_breakout import load_strategy, signal, strategy_name, strategy_version
 
 # AI Foundation Models (3-Layer Architecture)
@@ -415,16 +417,20 @@ def save_state(st):
                 'strategy': v.get('strategy_name', ''),
             })
         # 누적 실현 PnL 계산
-        realized = 0.0
+        realized_gross = 0.0
+        total_commission = 0.0
         try:
             if TRADES.exists():
-                for line in TRADES.read_text().strip().split('\n')[-200:]:
+                for line in TRADES.read_text().strip().split('\n')[-500:]:
                     t = json.loads(line)
                     if t.get('type') == 'EXIT':
                         ret = float(t.get('ret', 0) or 0)
-                        realized += ret * 40 * 3  # notional * leverage 근사
+                        notional = 40 * 3  # notional * leverage
+                        realized_gross += ret * notional
+                        total_commission += fee_rate * 2 * notional  # 왕복 수수료
         except Exception:
             pass
+        realized_net = realized_gross - total_commission
         status_data = {
             'updated_at': datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%dT%H:%M:%S+0900'),
             'config': {
@@ -434,11 +440,11 @@ def save_state(st):
                 'order_notional_usdt': 40,
             },
             'pnl': {
-                'realized_gross': round(realized, 4),
-                'commission': 0.0,
-                'realized_net': round(realized, 4),
+                'realized_gross': round(realized_gross, 4),
+                'commission': round(total_commission, 4),
+                'realized_net': round(realized_net, 4),
                 'unrealized': round(total_pnl, 4),
-                'total': round(realized + total_pnl, 4),
+                'total': round(realized_net + total_pnl, 4),
             },
             'positions': positions,
         }
@@ -528,6 +534,7 @@ def main():
     early_sl_buffer_mult = 1.25            # 보호시간 동안 SL 완충 배수
     min_entry_votes = 2                    # 진입 합의 점수 최소치(2-of-N)
     max_spread_ratio = 0.0015              # 최대 허용 스프레드 비율
+    spread_grace_secs = 20                 # 진입 직후 스프레드 급확장 유예 구간
 
     def apply_runtime_config(new_cfg: dict):
         nonlocal cfg
@@ -543,7 +550,7 @@ def main():
         nonlocal entry_confirm_secs, max_entry_slip_pct
         nonlocal max_chase_pct, stagnation_minutes, soft_timeout_min_profit_pct, max_dyn_sl_mult, min_rr_ratio
         nonlocal real_order, blocked_hours_kst, loss_symbol_cooldown_minutes, min_protect_secs, early_sl_buffer_mult
-        nonlocal min_entry_votes, max_spread_ratio
+        nonlocal min_entry_votes, max_spread_ratio, spread_grace_secs
         cfg = new_cfg
         volatile_top_n = int(cfg.get('volatile_top_n', 30))
         volatile_refresh_minutes = int(cfg.get('volatile_refresh_minutes', 30))
@@ -591,6 +598,7 @@ def main():
         early_sl_buffer_mult = float(cfg.get('early_sl_buffer_mult', 1.25))
         min_entry_votes = int(cfg.get('min_entry_votes', 2))
         max_spread_ratio = float(cfg.get('max_spread_ratio', 0.0015))
+        spread_grace_secs = int(cfg.get('spread_grace_secs', 20))
 
     apply_runtime_config(cfg)
 
@@ -857,6 +865,11 @@ def main():
                         'strategy': strategy_meta['name'],
                         'strategy_version': strategy_meta['version'],
                     })
+                    # 텔레그램 알림
+                    try:
+                        notify_entry(_ps, _psig.lower(), _cur_px, 0, _tpx, 'surge', 0, strategy_meta['name'], dry=not real_order)
+                    except Exception:
+                        pass
                 except Exception as _pex:
                     append(f"ENTRY_ERROR(confirmed) {_ps} {_psig}: {_pex}")
                 _to_rm.append(_ps)
@@ -891,7 +904,9 @@ def main():
                             dyn_tp = max(dyn_tp, dyn_sl * min_rr_ratio)
 
                             direction = 1 if pos == 'LONG' else -1
-                            ret = (px - entry) / entry * direction
+                            ret_gross = (px - entry) / entry * direction
+                            round_trip_fee_cost = fee_rate * 2  # 0.08%
+                            ret = ret_gross - round_trip_fee_cost  # 수수료 차감된 순수익률
 
                             # trailing reference
                             if pos == 'LONG':
@@ -901,7 +916,7 @@ def main():
                                 st[sym]['trough'] = min(float(st[sym].get('trough', entry)), px)
                                 trail_ret = (float(st[sym]['trough']) - px) / float(st[sym]['trough'])
 
-                            round_trip_fee = fee_rate * 2  # 진입+청산 수수료 합계 (0.08%)
+                            round_trip_fee = round_trip_fee_cost  # 이미 위에서 계산
                             # be_lock: TP1 + 수수료 이상 수익일 때만 본절 보호 의미 있음
                             be_lock = ret >= max(base_tp1 + round_trip_fee, dyn_sl * 0.8)
                             stop_level = -dyn_sl
@@ -932,6 +947,11 @@ def main():
                             if age_sec < max(min_protect_secs, 0):
                                 effective_stop = min(effective_stop, stop_level * early_sl_buffer_mult)
                             stop_hit = (age_sec >= max(min_protect_secs, 0) and ret <= effective_stop) or (ret <= (stop_level * 2.0))
+                            # 진입 직후 스프레드 급확장 구간은 SL 1틱 유예
+                            if stop_hit and age_sec < max(spread_grace_secs, 0):
+                                sr_now = spread_ratio(base_url, sym)
+                                if sr_now > (max_spread_ratio * 1.6):
+                                    stop_hit = False
                             tp_hit = ret >= dyn_tp
                             # trail: 수수료 이상 수익 구간에서만 작동 (수수료 이하에서 trail 탈출 방지)
                             trail_hit = be_lock and trail_ret <= -max(0.003, dyn_sl * 0.6) and ret > round_trip_fee
@@ -962,6 +982,11 @@ def main():
                                     'strategy': trade_strategy_name,
                                     'strategy_version': trade_strategy_version,
                                 })
+                                # 텔레그램 알림
+                                try:
+                                    notify_close(sym, pos.lower(), entry, px, ret * 100, reason, dry=not real_order)
+                                except Exception:
+                                    pass
                                 st[sym] = {
                                     'position': 'FLAT',
                                     'last_key': st[sym].get('last_key', ''),
@@ -997,6 +1022,26 @@ def main():
                         if trading_halted:
                             st[sym]['last_key'] = keyc
                             continue
+                        # ─── 드로다운 보호: 일일 손실 한도 초과 시 진입 차단 ───
+                        daily_max_loss = float(cfg.get('daily_max_loss_usdt', 15.0))
+                        today_str = datetime.now(timezone(timedelta(hours=9))).strftime('%Y-%m-%d')
+                        today_pnl = 0.0
+                        try:
+                            if TRADES.exists():
+                                for _line in TRADES.read_text().strip().split('\n')[-200:]:
+                                    _t = json.loads(_line)
+                                    if _t.get('type') == 'EXIT' and _t.get('ts', '')[:10] == today_str:
+                                        today_pnl += float(_t.get('ret', 0)) * 40 * 3
+                        except Exception:
+                            pass
+                        if today_pnl < -daily_max_loss:
+                            if not getattr(scan_once, '_dd_warned', False):
+                                append(f"DRAWDOWN_HALT daily_pnl={today_pnl:.2f}$ limit=-{daily_max_loss}$")
+                                scan_once._dd_warned = True
+                            st[sym]['last_key'] = keyc
+                            continue
+                        else:
+                            scan_once._dd_warned = False
                         # 연속 손실 쿨다운 중이면 진입 금지
                         if int(time.time()) < cooldown_until:
                             st[sym]['last_key'] = keyc

@@ -6,5 +6,21 @@
     "new_strategies": [],
     "new_indicators": [],
     "killed": []
+  },
+  {
+    "time": "2026-03-20T03:09:53",
+    "phase": 1,
+    "total_trades": 15,
+    "new_strategies": [],
+    "new_indicators": [],
+    "killed": []
+  },
+  {
+    "time": "2026-03-21T03:09:37",
+    "phase": 2,
+    "total_trades": 88,
+    "new_strategies": [],
+    "new_indicators": [],
+    "killed": []
   }
 ]

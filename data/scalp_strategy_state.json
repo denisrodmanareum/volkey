@@ -6,16 +6,16 @@
     "promoted_at": "2026-03-13T18:31:57.973367+09:00"
   },
   "candidate": {
-    "name": "momentum_breakout_conservative_20260316_v15",
-    "version": "e5799516043d",
-    "snapshot_path": "/Users/riot91naver.com/Desktop/2026/volky-bot/config/strategy_backups/momentum_breakout_conservative_20260316__e5799516043d_candidate.yaml",
-    "started_at": "2026-03-19T15:11:46.436878+09:00",
+    "name": "momentum_breakout_conservative_20260316_v19_20260321",
+    "version": "692fdde9e662",
+    "snapshot_path": "/Users/riot91naver.com/Desktop/2026/volky-bot/config/strategy_backups/momentum_breakout_conservative_20260316__692fdde9e662_candidate.yaml",
+    "started_at": "2026-03-21T03:01:00.312509+09:00",
     "baseline": {
       "total": 20,
-      "win_rate": 0.05,
-      "total_pnl": -0.13224999999999998,
-      "avg_pnl": -0.006612499999999999,
-      "max_drawdown": 0.13224999999999998
+      "win_rate": 0.3,
+      "total_pnl": 0.03766,
+      "avg_pnl": 0.001883,
+      "max_drawdown": 0.034589999999999996
     },
     "thresholds": {
       "min_trades": 30,
@@ -28,8 +28,8 @@
     "previous_active_version": "3414c69186b7"
   },
   "history": [],
-  "last_generated_date": "2026-03-19",
-  "last_generated_reason": "manual_force_tune",
-  "last_generated_from_version": "b711ef4a7c26",
-  "last_generated_to_version": "e5799516043d"
+  "last_generated_date": "2026-03-21",
+  "last_generated_reason": "llm_daily_tune",
+  "last_generated_from_version": "b5f522d8380b",
+  "last_generated_to_version": "692fdde9e662"
 }

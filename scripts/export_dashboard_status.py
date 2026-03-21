@@ -80,25 +80,78 @@ def main():
             realized=0.0
             comm=0.0
 
-    # 페이퍼 모드에서는 로컬 상태 파일을 표시 소스로 사용
-    if not real_order and STATE.exists():
+    # 페이퍼 모드에서는 로컬 상태/체결 로그를 표시 소스로 사용
+    if not real_order:
         try:
-            st = json.loads(STATE.read_text(encoding='utf-8'))
+            # 1) 오픈 포지션 + 미실현손익(마크가 조회 가능하면 계산)
+            st = json.loads(STATE.read_text(encoding='utf-8')) if STATE.exists() else {}
             for sym, v in st.items():
                 if not isinstance(v, dict):
                     continue
                 pos = v.get('position')
                 if pos not in ('LONG','SHORT'):
                     continue
+                qty = float(v.get('qty', 0) or 0)
+                entry = float(v.get('entryApprox', v.get('entry', 0)) or 0)
+                mark = 0.0
+                u = 0.0
+                try:
+                    tk = requests.get(f"{base}/fapi/v1/ticker/price", params={'symbol': sym}, timeout=5).json()
+                    mark = float(tk.get('price', 0) or 0)
+                    if qty > 0 and entry > 0 and mark > 0:
+                        direction = 1.0 if pos == 'LONG' else -1.0
+                        u = (mark - entry) * qty * direction
+                except Exception:
+                    pass
+                unreal += u
                 positions.append({
                     'symbol': sym,
                     'side': pos,
-                    'qty': float(v.get('qty',0) or 0),
-                    'entry': float(v.get('entryApprox', v.get('entry', 0)) or 0),
-                    'mark': 0.0,
-                    'unrealized_pnl': 0.0,
+                    'qty': qty,
+                    'entry': entry,
+                    'mark': mark,
+                    'unrealized_pnl': u,
                     'order_id': v.get('orderId')
                 })
+
+            # 2) 금일 실현/수수료(페이퍼 추정치)
+            trades_path = BASE / 'papertrade' / 'scalp_live_trades.jsonl'
+            if trades_path.exists():
+                import datetime
+                now_utc = datetime.datetime.now(datetime.timezone.utc)
+                start = now_utc.replace(hour=0, minute=0, second=0, microsecond=0)
+                notional = float(cfg.get('order_notional_usdt', 40) or 40)
+                lev = float(cfg.get('leverage', 3) or 3)
+                fee_rt = float(cfg.get('fee_rate', 0.0004) or 0.0004)
+                gross = 0.0
+                fee = 0.0
+                for line in trades_path.read_text(encoding='utf-8').splitlines():
+                    line = line.strip()
+                    if not line:
+                        continue
+                    try:
+                        ev = json.loads(line)
+                    except Exception:
+                        continue
+                    if ev.get('type') != 'EXIT':
+                        continue
+                    ts = ev.get('ts')
+                    if not ts:
+                        continue
+                    try:
+                        dt = datetime.datetime.fromisoformat(str(ts).replace('Z', '+00:00'))
+                        if dt.tzinfo is None:
+                            dt = dt.replace(tzinfo=datetime.timezone.utc)
+                    except Exception:
+                        continue
+                    if dt < start:
+                        continue
+                    r = float(ev.get('ret', 0) or 0)
+                    trade_notional = notional * lev
+                    gross += (r * trade_notional)
+                    fee += -(trade_notional * fee_rt * 2.0)
+                realized = gross
+                comm = fee
         except Exception:
             pass
 

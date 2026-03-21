@@ -153,15 +153,48 @@ else:
     details = '- 없음'
 
 # MD 기준 상태정보창 양식(한글)
-realized_today = income_sum_today(base_url, api_key, api_secret, 'REALIZED_PNL')
-commission_today = income_sum_today(base_url, api_key, api_secret, 'COMMISSION')
+real_order = bool(cfg.get('real_order', True))
+if real_order:
+    realized_today = income_sum_today(base_url, api_key, api_secret, 'REALIZED_PNL')
+    commission_today = income_sum_today(base_url, api_key, api_secret, 'COMMISSION')
+else:
+    # 페이퍼 모드: 체결 로그 기반 금일 손익/수수료 추정
+    realized_today = 0.0
+    commission_today = 0.0
+    fee_rate = float(cfg.get('fee_rate', 0.0004) or 0.0004)
+    notional = float(cfg.get('order_notional_usdt', 40) or 40)
+    lev = float(cfg.get('leverage', 3) or 3)
+    per_trade_notional = notional * lev
+    today_utc = datetime.now(timezone.utc).replace(hour=0, minute=0, second=0, microsecond=0)
+    for ln in lines:
+        try:
+            j = json.loads(ln)
+        except Exception:
+            continue
+        if j.get('type') != 'EXIT':
+            continue
+        ts = j.get('ts')
+        if not ts:
+            continue
+        try:
+            dt = datetime.fromisoformat(str(ts).replace('Z', '+00:00'))
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+        except Exception:
+            continue
+        if dt < today_utc:
+            continue
+        realized_today += float(j.get('ret', 0) or 0) * per_trade_notional
+        commission_today += -(per_trade_notional * fee_rate * 2.0)
+
 net_realized_today = realized_today + commission_today
 total_pnl = net_realized_today + total_unreal
+engine_mode = 'PAPER loop running (mainnet market data)' if not real_order else 'LIVE loop running'
 
 msg = (
     f"[10분 상태정보창 {now_kst()}]\n\n"
     f"[시스템 상태]\n"
-    f"- 엔진: LIVE loop running\n"
+    f"- 엔진: {engine_mode}\n"
     f"- 마진모드: {margin_mode}\n"
     f"- 레버리지: {leverage}x\n\n"
     f"[전략 상태]\n"

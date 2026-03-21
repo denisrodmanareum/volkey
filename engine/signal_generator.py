@@ -122,14 +122,18 @@ class ChronosSignal:
             if samples.ndim == 3:
                 samples = samples.squeeze(0)
 
-            # 예측된 수익률로 방향 판단 (0 기준, 편향 없음)
-            cumulative_returns = samples.sum(axis=1)  # 전체 예측 구간 누적 수익률
-            prob_up = float(np.mean(cumulative_returns > 0.0005))   # 0.05% 이상 상승
-            prob_down = float(np.mean(cumulative_returns < -0.0005))  # 0.05% 이상 하락
+            # 예측된 수익률로 방향 판단 (편향 제거)
+            cumulative_returns = samples.sum(axis=1)
+            # 변동성 기반 적응형 threshold (최소 0.1%)
+            vol = float(np.std(returns[-20:])) if len(returns) >= 20 else 0.005
+            threshold = max(vol * 0.5, 0.001)  # 변동성의 50% 또는 최소 0.1%
+            prob_up = float(np.mean(cumulative_returns > threshold))
+            prob_down = float(np.mean(cumulative_returns < -threshold))
             prob_neutral = max(0, 1.0 - prob_up - prob_down)
 
             expected_ret = float(np.median(cumulative_returns))
-            confidence = max(prob_up, prob_down, prob_neutral)
+            # confidence는 편향되지 않은 방향성 확률
+            confidence = abs(prob_up - prob_down)  # 방향 일관성 (0~1)
 
             return SignalResult(
                 prob_up=prob_up, prob_down=prob_down, prob_neutral=prob_neutral,

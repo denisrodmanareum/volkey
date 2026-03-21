@@ -58,5 +58,975 @@
     "pnl_pct": 0.03008,
     "side": "LONG",
     "reason": "TP"
+  },
+  {
+    "ts": "2026-03-19T11:53:15.659286+00:00",
+    "symbol": "AIXBTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.00087,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T11:58:06.704834+00:00",
+    "symbol": "AIXBTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.00087,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T15:25:53.934762+00:00",
+    "symbol": "WLDUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.00091,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T15:51:54.534027+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.00577,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T15:51:59.139009+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.00621,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T16:05:35.732519+00:00",
+    "symbol": "ALCHUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.00783,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T16:05:39.136095+00:00",
+    "symbol": "ALCHUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": 0.00951,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T16:20:37.493324+00:00",
+    "symbol": "UAIUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.00265,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T16:20:42.932217+00:00",
+    "symbol": "UAIUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v15",
+    "strategy_version": "e5799516043d",
+    "pattern": "1m",
+    "pnl_pct": -0.00246,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T18:15:49.720928+00:00",
+    "symbol": "SAHARAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.0051,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T19:28:37.959235+00:00",
+    "symbol": "BEATUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00083,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T19:32:03.441179+00:00",
+    "symbol": "BEATUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.00367,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T19:53:29.672031+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.00373,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T19:55:24.600314+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00124,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T20:23:16.827793+00:00",
+    "symbol": "THEUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00128,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T20:55:54.582570+00:00",
+    "symbol": "BEATUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00271,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T20:55:54.879811+00:00",
+    "symbol": "BEATUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00271,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T21:05:54.433515+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00099,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T21:05:59.092151+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00099,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T21:52:01.637678+00:00",
+    "symbol": "BANANAS31USDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00088,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-19T22:10:40.330142+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.01161,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T22:10:41.142343+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.01161,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-19T22:11:58.083234+00:00",
+    "symbol": "SIRENUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.01523,
+    "side": "LONG",
+    "reason": "TRAIL"
+  },
+  {
+    "ts": "2026-03-19T22:11:59.031908+00:00",
+    "symbol": "SIRENUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.01386,
+    "side": "LONG",
+    "reason": "TRAIL"
+  },
+  {
+    "ts": "2026-03-20T00:29:27.405469+00:00",
+    "symbol": "ATHUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00086,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T00:29:32.650090+00:00",
+    "symbol": "ATHUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00399,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T00:29:51.517145+00:00",
+    "symbol": "CLOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.01207,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T00:54:52.062556+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00354,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T00:54:55.530293+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.00313,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T00:59:52.897005+00:00",
+    "symbol": "RIFUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": -0.01482,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T01:19:41.244809+00:00",
+    "symbol": "WAXPUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": 0.02723,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T01:19:43.471626+00:00",
+    "symbol": "WAXPUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": 0.03047,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T01:35:15.554135+00:00",
+    "symbol": "DEXEUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.00528,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T01:45:09.541664+00:00",
+    "symbol": "SIGNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.00308,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T01:45:12.122317+00:00",
+    "symbol": "SIGNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.00242,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T02:51:47.313167+00:00",
+    "symbol": "TRIAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.00646,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T03:11:32.106454+00:00",
+    "symbol": "PTBUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": 0.03854,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T03:17:32.212546+00:00",
+    "symbol": "PTBUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.0108,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T03:28:10.139135+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.0096,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T03:29:05.328704+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.01097,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T03:33:07.404163+00:00",
+    "symbol": "SIGNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.01094,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T03:33:08.617402+00:00",
+    "symbol": "SIGNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.01094,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T03:41:34.988823+00:00",
+    "symbol": "PIPPINUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": -0.00167,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T04:13:10.339884+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": 0.01601,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T04:13:35.270912+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v17",
+    "strategy_version": "2fb09b783ecb",
+    "pattern": "1m",
+    "pnl_pct": 0.01416,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T04:30:06.343544+00:00",
+    "symbol": "QNTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.0305,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T04:33:11.764379+00:00",
+    "symbol": "GUNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v18",
+    "strategy_version": "d10489f37b16",
+    "pattern": "1m",
+    "pnl_pct": -0.00603,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T04:33:27.291086+00:00",
+    "symbol": "GUNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v18",
+    "strategy_version": "d10489f37b16",
+    "pattern": "1m",
+    "pnl_pct": -0.00603,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T04:37:32.961851+00:00",
+    "symbol": "APRUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v18",
+    "strategy_version": "d10489f37b16",
+    "pattern": "1m",
+    "pnl_pct": -0.0028,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T04:37:55.938192+00:00",
+    "symbol": "APRUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v18",
+    "strategy_version": "d10489f37b16",
+    "pattern": "1m",
+    "pnl_pct": -0.00538,
+    "side": "SHORT",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T05:12:20.819862+00:00",
+    "symbol": "APRUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.01854,
+    "side": "SHORT",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T05:16:15.318966+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v18",
+    "strategy_version": "d10489f37b16",
+    "pattern": "1m",
+    "pnl_pct": 0.02392,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T05:45:55.651326+00:00",
+    "symbol": "KITEUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.00376,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T06:09:28.552793+00:00",
+    "symbol": "WAXPUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.01202,
+    "side": "LONG",
+    "reason": "TRAIL"
+  },
+  {
+    "ts": "2026-03-20T06:39:50.298595+00:00",
+    "symbol": "IRYSUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00246,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T06:40:19.845209+00:00",
+    "symbol": "ZETAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00442,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T07:07:31.601116+00:00",
+    "symbol": "PIPPINUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.0105,
+    "side": "SHORT",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T07:19:29.007643+00:00",
+    "symbol": "ZETAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.01076,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T07:28:21.959534+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00149,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T08:14:17.067371+00:00",
+    "symbol": "TAOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00167,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T08:17:10.746779+00:00",
+    "symbol": "FARTCOINUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00095,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T08:26:16.414610+00:00",
+    "symbol": "IRYSUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00193,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T09:03:02.660094+00:00",
+    "symbol": "JCTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.01093,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T09:10:10.679298+00:00",
+    "symbol": "PIPPINUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.01072,
+    "side": "SHORT",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T10:46:13.424432+00:00",
+    "symbol": "IRYSUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.01169,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T11:16:50.421937+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.00449,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T11:26:39.707764+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.0012,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T11:31:04.839857+00:00",
+    "symbol": "CELOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00119,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T11:50:32.098548+00:00",
+    "symbol": "WAXPUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.02491,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T13:13:16.964901+00:00",
+    "symbol": "AKTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00107,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T13:28:00.154295+00:00",
+    "symbol": "FETUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.0066,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T13:31:39.083949+00:00",
+    "symbol": "JCTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00681,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T13:47:08.207351+00:00",
+    "symbol": "WAXPUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00904,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T14:25:49.099763+00:00",
+    "symbol": "STABLEUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.01107,
+    "side": "SHORT",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T14:31:48.057862+00:00",
+    "symbol": "METUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.0,
+    "side": "SHORT",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T15:04:42.868146+00:00",
+    "symbol": "GUAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.04151,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T15:05:37.445157+00:00",
+    "symbol": "STOUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.0043,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T15:34:12.627116+00:00",
+    "symbol": "GUAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00202,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T16:17:09.454739+00:00",
+    "symbol": "ATHUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00713,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T17:27:38.208046+00:00",
+    "symbol": "RIVERUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.00601,
+    "side": "SHORT",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T17:51:46.601612+00:00",
+    "symbol": "GUAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00234,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T17:53:24.504242+00:00",
+    "symbol": "KASUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.02347,
+    "side": "SHORT",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T18:03:06.231012+00:00",
+    "symbol": "LIGHTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": -0.00284,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T18:12:00.561037+00:00",
+    "symbol": "AKTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00536,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T19:02:17.286819+00:00",
+    "symbol": "BASUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19",
+    "strategy_version": "b5f522d8380b",
+    "pattern": "1m",
+    "pnl_pct": 0.01137,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T19:04:23.358561+00:00",
+    "symbol": "GUNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00418,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T19:19:59.908039+00:00",
+    "symbol": "RIVERUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": 0.00455,
+    "side": "SHORT",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T20:05:06.375872+00:00",
+    "symbol": "GWEIUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": 0.00489,
+    "side": "LONG",
+    "reason": "TIMEOUT"
+  },
+  {
+    "ts": "2026-03-20T20:52:48.866249+00:00",
+    "symbol": "GUNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.01078,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T21:36:39.347817+00:00",
+    "symbol": "GUNUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00746,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T22:09:54.102660+00:00",
+    "symbol": "JCTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00584,
+    "side": "LONG",
+    "reason": "SL"
+  },
+  {
+    "ts": "2026-03-20T22:16:07.358892+00:00",
+    "symbol": "MYXUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00223,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T22:32:40.120943+00:00",
+    "symbol": "AGTUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v16",
+    "strategy_version": "e5ebe0ae3dc5",
+    "pattern": "1m",
+    "pnl_pct": 0.05877,
+    "side": "LONG",
+    "reason": "TP"
+  },
+  {
+    "ts": "2026-03-20T23:20:12.882880+00:00",
+    "symbol": "LITUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": 0.01216,
+    "side": "SHORT",
+    "reason": "TRAIL"
+  },
+  {
+    "ts": "2026-03-20T23:32:42.881878+00:00",
+    "symbol": "XAIUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00354,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-20T23:56:30.506315+00:00",
+    "symbol": "ZETAUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00176,
+    "side": "LONG",
+    "reason": "STAGNATION"
+  },
+  {
+    "ts": "2026-03-21T00:02:51.337964+00:00",
+    "symbol": "TUSDT",
+    "strategy": "momentum_breakout_conservative_20260316_v19_20260321",
+    "strategy_version": "692fdde9e662",
+    "pattern": "1m",
+    "pnl_pct": -0.00309,
+    "side": "LONG",
+    "reason": "STAGNATION"
   }
 ]
